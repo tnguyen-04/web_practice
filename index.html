@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./resposive.css">
+  <body>
+    <header>
+      <section class="wrapper--header-nav">
+        <div class="nav--header">
+          <div class="logo">
+            <svg
+              width=" 100%"
+              height=" 100%"
+              viewBox="0 0 144 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.19619 19.8894C3.82284 19.8894 0 15.7458 0 9.99818C0 4.33076 3.52877 0 9.16946 0C13.8745 0 16.6547 2.80698 17.0557 6.44268H13.2062C12.8586 4.51789 11.415 3.26144 9.16946 3.26144C5.64069 3.26144 3.9565 6.20208 3.9565 9.99818C3.9565 13.9012 5.98822 16.7082 9.19619 16.7082C11.4685 16.7082 13.0725 15.3448 13.3131 13.3398H17.1092C17.0023 15.024 16.2805 16.6547 14.9973 17.8577C13.6874 19.0874 11.8428 19.8894 9.19619 19.8894ZM24.8957 19.8894C20.6451 19.8894 17.7312 16.7349 17.7312 12.6448C17.7312 8.55459 20.6451 5.40009 24.8957 5.40009C29.1463 5.40009 32.0602 8.55459 32.0602 12.6448C32.0602 16.7349 29.1463 19.8894 24.8957 19.8894ZM24.8957 17.1092C27.1146 17.1092 28.371 15.3181 28.371 12.6448C28.371 9.97145 27.1146 8.1536 24.8957 8.1536C22.6501 8.1536 21.4204 9.97145 21.4204 12.6448C21.4204 15.3181 22.6501 17.1092 24.8957 17.1092ZM33.0017 0.374263V19.4884H36.6374V0.374263H33.0017ZM38.2291 19.4884V5.77435H41.8648V19.4884H38.2291ZM46.961 7.64567V5.77435H43.4055V19.4884H47.0412V11.7091C47.0412 9.83778 48.2174 8.55459 49.8214 8.55459C51.3452 8.55459 52.2007 9.59718 52.2007 11.0675V19.4884H55.8364V10.5328C55.8364 7.53873 53.9383 5.40009 51.1046 5.40009C49.2333 5.40009 47.9768 6.17535 47.0412 7.64567H46.961ZM40.0435 4.70859C41.2495 4.70859 42.2271 3.73101 42.2271 2.5251C42.2271 1.31918 41.2495 0.341599 40.0435 0.341599C38.8376 0.341599 37.86 1.31918 37.86 2.5251C37.86 3.73101 38.8376 4.70859 40.0435 4.70859ZM65.6205 20C61.4234 20 59.258 17.6742 59.258 14.6801C59.258 11.9533 60.9957 10.2424 63.4819 8.98596C62.3858 7.64931 61.8779 6.57998 61.8779 5.02946C61.8779 2.54328 63.8561 0.6185 66.8235 0.6185C69.7107 0.6185 71.8226 2.38288 71.8226 5.00273C71.8226 7.35524 70.4592 8.5315 68.4008 9.60082L70.9404 12.889C71.3147 11.9266 71.582 10.8305 71.6889 9.78796H74.9236C74.7632 11.9266 74.1484 13.9851 73.1058 15.696L76.1266 19.599H71.6889L70.6998 18.3425C69.283 19.3851 67.5453 20 65.6205 20ZM65.7542 17.0059C66.9037 17.0059 67.9463 16.6049 68.8018 15.8831L65.2997 11.3117C63.669 12.3009 63.1076 13.3702 63.1076 14.5732C63.1076 16.0168 64.2571 17.0059 65.7542 17.0059ZM65.3799 5.08293C65.3799 5.93839 65.9681 6.76712 66.7701 7.54237C68.0265 6.79385 68.374 5.96512 68.374 5.0562C68.374 4.12054 67.679 3.53241 66.877 3.53241C66.0215 3.53241 65.3799 4.174 65.3799 5.08293ZM79.1321 13.5728C79.2657 17.6095 82.2064 19.9086 87.3926 19.9086C91.6966 19.9086 94.8244 17.7432 94.8244 13.8669C94.8244 9.74997 91.6164 8.81432 87.6867 7.95886C84.8529 7.344 83.5163 6.88953 83.5163 5.33901C83.5163 3.97562 84.8797 3.09343 86.9649 3.09343C88.9431 3.09343 90.4402 4.05582 90.654 5.98061H94.3699C94.0759 2.13104 91.2956 0.0191247 86.9916 0.0191247C82.741 0.0191247 79.6667 1.97064 79.6667 5.74001C79.6667 9.72324 82.7945 10.6322 86.2163 11.4074L86.407 11.4511C89.2093 12.0929 90.9481 12.4912 90.9481 14.3213C90.9481 16.0857 89.2104 16.7808 87.2322 16.7808C84.5054 16.7808 83.1955 15.8719 82.9282 13.5728H79.1321ZM104.251 17.957C104.331 18.5719 104.464 19.2135 104.678 19.4808H108.18V19.3472C107.86 19.1066 107.699 18.4917 107.699 17.4491V10.4718C107.699 7.26379 106.042 5.41921 101.925 5.41921C97.9148 5.41921 96.1237 7.53113 96.0167 9.93711H99.2514C99.3584 8.62718 100.187 8.01232 101.898 8.01232C103.422 8.01232 104.197 8.65392 104.197 9.64304C104.197 10.6856 103.154 10.8728 100.882 11.1936C97.8346 11.6213 95.3751 12.5837 95.3751 15.6045C95.3751 18.3313 97.3534 19.8016 100.16 19.8016C102.513 19.8016 103.502 18.9996 104.197 17.957H104.251ZM104.277 14.6421C104.277 15.9788 103.128 17.262 101.043 17.262C99.7594 17.262 98.9039 16.8075 98.9039 15.5243C98.9039 14.2411 99.8396 13.8134 101.738 13.3857L101.935 13.3394C102.787 13.1402 103.682 12.931 104.277 12.5837V14.6421ZM109.208 19.4808V5.76674H112.711V7.61133H112.791C113.539 6.35487 114.876 5.39248 116.774 5.39248C118.512 5.39248 119.902 6.35487 120.57 7.79846H120.624C121.559 6.3014 123.003 5.39248 124.74 5.39248C127.628 5.39248 129.258 7.26379 129.258 10.2579V19.4808H125.623V10.8728C125.623 9.32224 124.847 8.52025 123.511 8.52025C121.987 8.52025 121.051 9.69651 121.051 11.5144V19.4808H117.416V10.8728C117.416 9.32224 116.64 8.52025 115.304 8.52025C113.833 8.52025 112.844 9.69651 112.844 11.5144V19.4808H109.208ZM130.701 5.76674V19.4808H134.337V5.76674H130.701ZM139.38 5.76674V7.95886H139.46C140.289 6.40834 141.225 5.60634 142.829 5.60634C143.23 5.60634 143.47 5.63308 143.684 5.71327V8.89451H143.604C141.225 8.65392 139.514 9.91037 139.514 12.7975V19.4808H135.878V5.76674H139.38ZM134.7 2.52518C134.7 3.73109 133.722 4.70868 132.516 4.70868C131.31 4.70868 130.333 3.73109 130.333 2.52518C130.333 1.31927 131.31 0.341681 132.516 0.341681C133.722 0.341681 134.7 1.31927 134.7 2.52518Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <button class="btn btn--nav__header">Join the Waitlist</button>
+        </div>
+      </section>
+      <section class="wrapper--hero">
+        <div class="container--hero">
+          <div class="hero">
+            <section class="wrapper--hero__left">
+              <div class="hero--left">
+                <div class="hero--logo">
+                  <svg
+                    width=" 100%"
+                    height=" 100%"
+                    viewBox="0 0 153 85"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.0659 36.6039C7.43153 36.6039 0.577229 29.1744 0.577229 18.869C0.577229 8.7074 6.90428 0.942383 17.018 0.942383C25.454 0.942383 30.439 5.97526 31.158 12.494H24.2557C23.6326 9.04292 21.0443 6.79011 17.018 6.79011C10.6909 6.79011 7.67119 12.0626 7.67119 18.869C7.67119 25.8671 11.314 30.9 17.0659 30.9C21.1401 30.9 24.0161 28.4555 24.4475 24.8605H31.2538C31.0621 27.8803 29.7679 30.8041 27.4672 32.9611C25.1185 35.166 21.8112 36.6039 17.0659 36.6039Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M39.6225 11.2957V15.2262H39.7663C41.2522 12.4461 42.9298 11.0081 45.8057 11.0081C46.5247 11.0081 46.9561 11.0561 47.3396 11.1999V16.9038H47.1958C42.9298 16.4724 39.8621 18.7252 39.8621 23.9019V35.8849H33.3434V11.2957H39.6225Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M60.0386 36.6039C51.8901 36.6039 47.2886 30.9 47.2886 23.5664C47.2886 16.2807 52.2257 10.6247 59.4155 10.6247C67.3243 10.6247 71.5423 16.6641 71.5423 25.4357H53.7116C54.1909 29.2224 56.2999 31.571 59.9907 31.571C62.5311 31.571 64.017 30.4207 64.7359 28.5513H71.1589C70.2481 32.9131 66.3656 36.6039 60.0386 36.6039ZM59.5113 15.6576C56.0602 15.6576 54.3826 17.7186 53.8074 20.9301H64.7359C64.5442 17.8145 62.4831 15.6576 59.5113 15.6576Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M89.0829 35.8849C88.6994 35.4056 88.4598 34.2552 88.316 33.1528H88.2201C86.9739 35.0222 85.2004 36.4601 80.9823 36.4601C75.9495 36.4601 72.4025 33.8239 72.4025 28.9348C72.4025 23.5184 76.8122 21.7929 82.2765 21.026C86.3507 20.4508 88.2201 20.1153 88.2201 18.2459C88.2201 16.4724 86.8301 15.322 84.0979 15.322C81.0303 15.322 79.5444 16.4245 79.3526 18.7732H73.5528C73.7446 14.4593 76.956 10.6726 84.1459 10.6726C91.5274 10.6726 94.4992 13.9799 94.4992 19.7318V32.2421C94.4992 34.1115 94.7868 35.2139 95.362 35.6453V35.8849H89.0829ZM82.5641 31.9066C86.3028 31.9066 88.3639 29.6058 88.3639 27.2092V23.5184C87.2135 24.1895 85.44 24.5729 83.8103 24.9564C80.4071 25.7233 78.7295 26.4902 78.7295 28.791C78.7295 31.0917 80.2634 31.9066 82.5641 31.9066Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M95.7788 15.6096V11.2957H99.182V3.62658H105.557V11.2957H109.775V15.6096H105.557V28.6472C105.557 30.4686 106.564 31.0917 108.001 31.0917C108.816 31.0917 109.919 31.0438 109.919 31.0438V35.837C109.919 35.837 108.433 35.9329 105.845 35.9329C102.681 35.9329 99.182 34.6866 99.182 30.0372V15.6096H95.7788Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M123.587 36.6039C115.965 36.6039 110.741 30.9479 110.741 23.6143C110.741 16.2807 115.965 10.6247 123.587 10.6247C131.208 10.6247 136.432 16.2807 136.432 23.6143C136.432 30.9479 131.208 36.6039 123.587 36.6039ZM123.587 31.619C127.565 31.619 129.818 28.4075 129.818 23.6143C129.818 18.8211 127.565 15.5617 123.587 15.5617C119.56 15.5617 117.355 18.8211 117.355 23.6143C117.355 28.4075 119.56 31.619 123.587 31.619Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M144.783 11.2957V15.2262H144.927C146.413 12.4461 148.09 11.0081 150.966 11.0081C151.685 11.0081 152.117 11.0561 152.5 11.1999V16.9038H152.356C148.09 16.4724 145.023 18.7252 145.023 23.9019V35.8849H138.504V11.2957H144.783Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M15.3403 77.4984C6.0415 77.4984 0.768958 73.3762 0.529297 66.1385H7.33567C7.81499 70.2607 10.1637 71.8903 15.0527 71.8903C18.5997 71.8903 21.7153 70.6441 21.7153 67.4806C21.7153 64.1253 18.4559 63.4543 13.2313 62.256C7.09601 60.8659 1.48794 59.2362 1.48794 52.0944C1.48794 45.3359 7.00014 41.8369 14.6214 41.8369C22.3384 41.8369 27.3234 45.6235 27.8506 52.5257H21.1881C20.8046 49.0746 18.1204 47.3491 14.5734 47.3491C10.8347 47.3491 8.39017 48.9308 8.39017 51.3754C8.39017 54.1554 10.7868 54.9703 15.8676 56.0727C22.9136 57.6066 28.6655 59.2842 28.6655 66.6657C28.6655 73.6159 23.0574 77.4984 15.3403 77.4984Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M29.6586 56.4562V52.1423H33.0618V44.4731H39.4367V52.1423H43.6548V56.4562H39.4367V69.4937C39.4367 71.3152 40.4433 71.9383 41.8813 71.9383C42.6961 71.9383 43.7986 71.8903 43.7986 71.8903V76.6836C43.7986 76.6836 42.3127 76.7794 39.7243 76.7794C36.5608 76.7794 33.0618 75.5332 33.0618 70.8838V56.4562H29.6586Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M61.769 76.7315C61.3856 76.2522 61.1459 75.1018 61.0021 73.9994H60.9062C59.66 75.8687 57.8865 77.3067 53.6685 77.3067C48.6356 77.3067 45.0886 74.6704 45.0886 69.7813C45.0886 64.365 49.4984 62.6394 54.9627 61.8725C59.0369 61.2973 60.9062 60.9618 60.9062 59.0924C60.9062 57.319 59.5162 56.1686 56.7841 56.1686C53.7164 56.1686 52.2305 57.271 52.0388 59.6197H46.239C46.4307 55.3058 49.6422 51.5192 56.832 51.5192C64.2136 51.5192 67.1854 54.8265 67.1854 60.5784V73.0886C67.1854 74.958 67.4729 76.0604 68.0481 76.4918V76.7315H61.769ZM55.2502 72.7531C58.9889 72.7531 61.05 70.4524 61.05 68.0558V64.365C59.8997 65.036 58.1262 65.4195 56.4965 65.803C53.0933 66.5699 51.4157 67.3368 51.4157 69.6375C51.4157 71.9383 52.9495 72.7531 55.2502 72.7531Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M76.6501 52.1423V56.0727H76.7939C78.2798 53.2927 79.9574 51.8547 82.8333 51.8547C83.5523 51.8547 83.9837 51.9026 84.3672 52.0464V57.7503H84.2234C79.9574 57.319 76.8897 59.5718 76.8897 64.7485V76.7315H70.371V52.1423H76.6501Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M85.7374 56.4562V52.1423H89.1405V44.4731H95.5155V52.1423H99.7336V56.4562H95.5155V69.4937C95.5155 71.3152 96.5221 71.9383 97.9601 71.9383C98.7749 71.9383 99.8773 71.8903 99.8773 71.8903V76.6836C99.8773 76.6836 98.3914 76.7794 95.8031 76.7794C92.6396 76.7794 89.1405 75.5332 89.1405 70.8838V56.4562H85.7374Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M123.941 76.7315H117.662V73.8556H117.518C115.84 76.1084 113.923 77.4025 110.472 77.4025C105.008 77.4025 101.94 73.9035 101.94 68.5351V52.1423H108.411V67.4327C108.411 70.3086 109.705 71.8903 112.485 71.8903C115.553 71.8903 117.422 69.5896 117.422 66.3302V52.1423H123.941V76.7315Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M127.199 84.7841V52.1423H133.478V55.2099H133.622C135.203 53.053 137.504 51.4712 140.859 51.4712C147.378 51.4712 151.548 56.7917 151.548 64.4609C151.548 72.4176 147.234 77.4505 140.907 77.4505C137.456 77.4505 135.203 76.0604 133.813 73.9514H133.717V84.7841H127.199ZM139.517 72.0341C142.825 72.0341 144.934 69.302 144.934 64.6526C144.934 60.0032 143.304 56.7438 139.278 56.7438C135.203 56.7438 133.574 60.2428 133.574 64.6526C133.574 69.1103 135.635 72.0341 139.517 72.0341Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <div class="hero--round">
+                    <svg
+                      width=" 100%"
+                      height=" 100%"
+                      viewBox="0 0 65 84"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="12"
+                        transform="matrix(0.998629 -0.052336 -0.052336 -0.998629 4.18359 83.825)"
+                        fill="currentColor"
+                      ></circle>
+                      <ellipse
+                        cx="27"
+                        cy="27.5"
+                        rx="27"
+                        ry="27.5"
+                        transform="matrix(0.998629 -0.052336 -0.052336 -0.998629 8.86719 58.5452)"
+                        fill="currentColor"
+                      ></ellipse>
+                    </svg>
+                  </div>
+                </div>
+                <div class="hero--title">
+                  Learn How to Book Better Brand Deals
+                </div>
+                <div class="hero--desc">
+                  <p>
+                    Build consistent revenue that allows you to focus on what
+                    you do best: creating.
+                  </p>
+                  <p>
+                    Through 5 chapters of guided videos, exercises, and
+                    conversations with industry experts, we'll take the
+                    confusion out of landing brand partnerships and help you get
+                    the deals that are right for you.
+                  </p>
+                </div>
+                <button class="btn hero--btn__left">Join the Waitlist</button>
+
+                <div class="hero--arrow">
+                  <svg
+                    width=" 100%"
+                    height=" 100%"
+                    viewBox="0 0 121 130"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M39.6938 14.9453L1.75938 35.8597C1.75938 35.8597 22.4731 51.9726 37.5382 58.7151"
+                      stroke="currentColor"
+                      stroke-width="2.98794"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="stroke-dashoffset: 0; stroke-dasharray: none"
+                    ></path>
+                    <path
+                      d="M105.154 106.943C110.62 54.5943 72.076 32.421 2.78486 36.192"
+                      stroke="currentColor"
+                      stroke-width="2.98794"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="stroke-dashoffset: 0; stroke-dasharray: none"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hero--text__special">Registrations</br> open soon</div>
+               
+              </div>
+              <div class="hero--dashline"></div>
+              <div class="hero--dashline__bottom"></div>
+            </section>
+            <section class="wrapper--hero__right">
+              <div class="hero--right">
+                <div class="hero--video">
+                  <video src="./assets/video/cat.mp4" autoplay loop muted></video>
+                  <div class="hero--right__btn">
+                    <div class="wrapper--play">
+                      <img src="./assets/play.png" alt="" />
+                    </div>
+                    <span>Play</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="header--video">
+        <div class="video--exit">
+          <svg
+            height="512px"
+            id="Layer_1"
+            style="enable-background: new 0 0 512 512"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="512px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              fill="currentColor"
+              d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/>
+          </svg>
+        </div>
+        <div class="wrapper--header-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/T2PxbmRbGA8?si=btFpS75ypAvCTMkr"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="struggling--wrapper">
+        <nav class="struggling-nav">
+          <div class="struggling--logo">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 85 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="4.46512"
+                cy="4.46512"
+                r="4.46512"
+                transform="matrix(1 0 0 -1 0 29.7675)"
+                fill="#F6E921"
+              ></circle>
+              <ellipse
+                cx="10.0465"
+                cy="10.2326"
+                rx="10.0465"
+                ry="10.2326"
+                transform="matrix(1 0 0 -1 2.23242 20.4651)"
+                fill="#F6E921"
+              ></ellipse>
+              <path
+                d="M33.0668 13.611C29.4105 13.611 26.8092 10.7754 26.8092 6.84209C26.8092 2.96368 29.2104 0 33.0486 0C36.2502 0 38.142 1.92091 38.4149 4.40894H35.7954C35.5589 3.09175 34.5766 2.23191 33.0486 2.23191C30.6474 2.23191 29.5014 4.24429 29.5014 6.84209C29.5014 9.51306 30.8839 11.434 33.0668 11.434C34.613 11.434 35.7045 10.501 35.8682 9.12888H38.4513C38.3785 10.2814 37.8874 11.3974 37.0142 12.2206C36.1229 13.0622 34.8677 13.611 33.0668 13.611Z"
+                fill="white"
+              ></path>
+              <path
+                d="M41.6273 3.95158V5.45172H41.6818C42.2457 4.39064 42.8824 3.84181 43.9739 3.84181C44.2467 3.84181 44.4104 3.86011 44.556 3.91499V6.09202H44.5014C42.8824 5.92737 41.7182 6.7872 41.7182 8.76299V13.3366H39.2443V3.95158H41.6273Z"
+                fill="white"
+              ></path>
+              <path
+                d="M49.3754 13.611C46.2829 13.611 44.5366 11.434 44.5366 8.63493C44.5366 5.85419 46.4103 3.69546 49.1389 3.69546C52.1404 3.69546 53.7411 6.00055 53.7411 9.34841H46.9742C47.1561 10.7937 47.9565 11.6901 49.3572 11.6901C50.3213 11.6901 50.8852 11.251 51.1581 10.5375H53.5956C53.25 12.2023 51.7765 13.611 49.3754 13.611ZM49.1753 5.61636C47.8655 5.61636 47.2289 6.40302 47.0106 7.62874H51.1581C51.0853 6.43961 50.3031 5.61636 49.1753 5.61636Z"
+                fill="white"
+              ></path>
+              <path
+                d="M60.398 13.3366C60.2524 13.1536 60.1615 12.7146 60.1069 12.2938H60.0705C59.5976 13.0073 58.9245 13.5561 57.3237 13.5561C55.4137 13.5561 54.0676 12.5499 54.0676 10.6839C54.0676 8.61664 55.7411 7.95804 57.8149 7.66533C59.3611 7.4458 60.0705 7.31774 60.0705 6.60426C60.0705 5.92737 59.543 5.4883 58.5061 5.4883C57.3419 5.4883 56.778 5.90907 56.7052 6.8055H54.5042C54.5769 5.15901 55.7957 3.71375 58.5243 3.71375C61.3257 3.71375 62.4535 4.97606 62.4535 7.17139V11.9462C62.4535 12.6597 62.5627 13.0805 62.7809 13.2451V13.3366H60.398ZM57.924 11.8182C59.3429 11.8182 60.1251 10.94 60.1251 10.0253V8.61664C59.6885 8.87276 59.0155 9.01911 58.397 9.16547C57.1054 9.45818 56.4688 9.75089 56.4688 10.629C56.4688 11.5071 57.0509 11.8182 57.924 11.8182Z"
+                fill="white"
+              ></path>
+              <path
+                d="M62.9391 5.59807V3.95158H64.2307V1.02448H66.65V3.95158H68.2508V5.59807H66.65V10.5741C66.65 11.2693 67.032 11.5071 67.5778 11.5071C67.887 11.5071 68.3054 11.4889 68.3054 11.4889V13.3183C68.3054 13.3183 67.7415 13.3549 66.7592 13.3549C65.5586 13.3549 64.2307 12.8792 64.2307 11.1047V5.59807H62.9391Z"
+                fill="white"
+              ></path>
+              <path
+                d="M73.4924 13.611C70.6001 13.611 68.6173 11.4523 68.6173 8.65323C68.6173 5.85419 70.6001 3.69546 73.4924 3.69546C76.3848 3.69546 78.3676 5.85419 78.3676 8.65323C78.3676 11.4523 76.3848 13.611 73.4924 13.611ZM73.4924 11.7084C75.0023 11.7084 75.8572 10.4827 75.8572 8.65323C75.8572 6.82379 75.0023 5.57978 73.4924 5.57978C71.9644 5.57978 71.1276 6.82379 71.1276 8.65323C71.1276 10.4827 71.9644 11.7084 73.4924 11.7084Z"
+                fill="white"
+              ></path>
+              <path
+                d="M81.5367 3.95158V5.45172H81.5913C82.1552 4.39064 82.7919 3.84181 83.8833 3.84181C84.1562 3.84181 84.3199 3.86011 84.4654 3.91499V6.09202H84.4109C82.7919 5.92737 81.6277 6.7872 81.6277 8.76299V13.3366H79.1537V3.95158H81.5367Z"
+                fill="white"
+              ></path>
+              <path
+                d="M32.412 29.2193C28.8829 29.2193 26.882 27.6459 26.791 24.8835H29.3741C29.556 26.4568 30.4474 27.0788 32.3028 27.0788C33.6489 27.0788 34.8313 26.6032 34.8313 25.3957C34.8313 24.1151 33.5943 23.859 31.6116 23.4017C29.2831 22.8711 27.1548 22.2491 27.1548 19.5233C27.1548 16.9437 29.2468 15.6083 32.1391 15.6083C35.0678 15.6083 36.9596 17.0535 37.1597 19.6879H34.6312C34.4857 18.3707 33.467 17.7121 32.1209 17.7121C30.702 17.7121 29.7743 18.3158 29.7743 19.2488C29.7743 20.3099 30.6838 20.6209 32.612 21.0417C35.2861 21.6271 37.469 22.2674 37.469 25.0847C37.469 27.7374 35.3407 29.2193 32.412 29.2193Z"
+                fill="white"
+              ></path>
+              <path
+                d="M37.8459 21.188V19.5415H39.1374V16.6145H41.5568V19.5415H43.1576V21.188H41.5568V26.1641C41.5568 26.8593 41.9388 27.0971 42.4845 27.0971C42.7937 27.0971 43.2121 27.0788 43.2121 27.0788V28.9083C43.2121 28.9083 42.6482 28.9448 41.6659 28.9448C40.4653 28.9448 39.1374 28.4692 39.1374 26.6946V21.188H37.8459Z"
+                fill="white"
+              ></path>
+              <path
+                d="M50.0321 28.9265C49.8866 28.7436 49.7956 28.3045 49.741 27.8838H49.7047C49.2317 28.5972 48.5586 29.1461 46.9579 29.1461C45.0478 29.1461 43.7017 28.1399 43.7017 26.2739C43.7017 24.2066 45.3753 23.548 47.449 23.2553C48.9952 23.0358 49.7047 22.9077 49.7047 22.1942C49.7047 21.5173 49.1771 21.0783 48.1402 21.0783C46.976 21.0783 46.4121 21.499 46.3394 22.3955H44.1383C44.2111 20.749 45.4298 19.3037 48.1584 19.3037C50.9598 19.3037 52.0876 20.566 52.0876 22.7614V27.5362C52.0876 28.2497 52.1968 28.6704 52.4151 28.8351V28.9265H50.0321ZM47.5581 27.4081C48.977 27.4081 49.7592 26.53 49.7592 25.6153V24.2066C49.3226 24.4627 48.6496 24.6091 48.0311 24.7554C46.7396 25.0481 46.1029 25.3409 46.1029 26.219C46.1029 27.0971 46.685 27.4081 47.5581 27.4081Z"
+                fill="white"
+              ></path>
+              <path
+                d="M55.6796 19.5415V21.0417H55.7342C56.2981 19.9806 56.9348 19.4318 58.0262 19.4318C58.2991 19.4318 58.4628 19.4501 58.6083 19.505V21.682H58.5537C56.9348 21.5173 55.7705 22.3772 55.7705 24.353V28.9265H53.2966V19.5415H55.6796Z"
+                fill="white"
+              ></path>
+              <path
+                d="M59.1283 21.188V19.5415H60.4198V16.6145H62.8392V19.5415H64.44V21.188H62.8392V26.1641C62.8392 26.8593 63.2212 27.0971 63.7669 27.0971C64.0762 27.0971 64.4946 27.0788 64.4946 27.0788V28.9083C64.4946 28.9083 63.9307 28.9448 62.9484 28.9448C61.7478 28.9448 60.4198 28.4692 60.4198 26.6946V21.188H59.1283Z"
+                fill="white"
+              ></path>
+              <path
+                d="M73.6269 28.9265H71.2439V27.8289H71.1893C70.5526 28.6887 69.825 29.1827 68.5153 29.1827C66.4415 29.1827 65.2773 27.8472 65.2773 25.7982V19.5415H67.7331V25.3774C67.7331 26.4751 68.2242 27.0788 69.2793 27.0788C70.4435 27.0788 71.1529 26.2007 71.1529 24.9567V19.5415H73.6269V28.9265Z"
+                fill="white"
+              ></path>
+              <path
+                d="M74.8633 32V19.5415H77.2463V20.7124H77.3008C77.9011 19.8891 78.7743 19.2854 80.0476 19.2854C82.5216 19.2854 84.1042 21.3161 84.1042 24.2432C84.1042 27.2801 82.467 29.201 80.0658 29.201C78.7561 29.201 77.9011 28.6704 77.3736 27.8655H77.3372V32H74.8633ZM79.5383 27.1337C80.7935 27.1337 81.5939 26.0909 81.5939 24.3164C81.5939 22.5418 80.9754 21.2978 79.4473 21.2978C77.9011 21.2978 77.2826 22.6333 77.2826 24.3164C77.2826 26.0177 78.0648 27.1337 79.5383 27.1337Z"
+                fill="white"
+              ></path>
+            </svg>
+          </div>
+          <div class="struggling--navbar">
+            <a class="nav--item" href="#strugglingsection">Overview</a>
+            <a class="nav--item" href="#curriculumSection">Curriculum</a>
+            <a class="nav--item" href="#elseSection">WhatYouGet</a>
+            <a class="nav--item" href="#!">LiveEvent</a>
+            <a class="nav--item" href="#metSection">AboutUs</a>
+            <a class="nav--item" href="#fagsSection">FAQs</a>
+           
+          </div>
+          <button class="btn struggling--btn">Join the Waitlist</button>
+          <div class="menu--struggling" id="menu--struggling">
+            <div class="menu--bars "></div>  
+            <div class="struggling--dropdown " >
+              <div class="content--dropdown">
+                <script>
+                  let navPC = document.querySelector(".struggling--navbar")
+                  let navMobile = document.querySelector(".content--dropdown")
+                  navMobile.innerHTML = navPC.innerHTML
+                </script>
+                <button class="btn btn--dropdown">Join the Waitlist</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section id="strugglingsection" class="struggling--content__wrapper">
+        <div class="struggling--content">
+          <section class="content--title">
+            <h2>By the end of this course</h2>
+            <h2>you will: 
+            </h2>
+            <div class="wrapper--signal">
+              <svg width=" 100%" height=" 100%" viewBox="0 0 194 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M2 5.80216C2 5.80216 122.026 9.186 191.764 2C90.0472 5.09999 46.7967 11.3 46.7967 11.3C46.7967 11.3 102.582 5.09999 145.13 16.0881C111.814 20.3161 70.1848 32.1483 56.3805 22.2881C47.85 16.1927 109.349 15.2441 111.889 51.8687" stroke="currentColor" stroke-width="2.98794" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+              </svg>
+            </div class="wrapper--signal">
+          </section>
+          <section class="content--cards">
+            <article class="card--common securing--card">
+              <div class="wrapper--card__img"><img src="./assets/images/struggling1.png" alt=""></div>
+              <h3>Building Consistent
+              </br>Cash Flow</h3>
+              <p>You're working with some brands already, but want to figure out how to get more deals, or larger ones, on a consistent basis.</p>
+            </article>
+            <article class="card--common bulding--card">
+              <div class="wrapper--card__img"><img src="./assets/images/struggling2.png" alt=""></div>
+              <h3>Building Consistent</br>Cash Flow</h3>
+              <p>Your revenue varies greatly month-to-month, making it difficult to grow your business and plan for the future. </p>
+            </article>
+            <article class="card--common confidence--card">
+              <div class="wrapper--card__img"><img src="./assets/images/struggling3.png" alt=""></div>
+              <h3>Confidence in Financial</br>Decision-Making</h3>
+              <p> You’re making money as a creator, but you struggle to know where your business is heading.</p>
+
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section class="wrapper--endCourse">
+        <div class="endCourse--top">
+          <div class="endCourse--title">
+            <h2>By the end of this course</h2>
+            <h2>you will:</h2>
+          </div>
+          <div class="endCourse--cards">
+            <article class="endCourse--cards__common">
+              <div class="tick--symbol">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 17.25L15.5 23.75L27 12.25" stroke="currentColor" stroke-width="4"></path>
+                </svg>
+              </div>
+              <div class="endCourse--card__infor">
+                <h3>
+                  Develop a clear vision of where your business is heading
+                </h3>
+                <p>
+                  Develop a clear vision of where your business is heading
+                  You’ll have a repeatable process in place that gives you the confidence to make long-term business decisions.
+                </p>
+              </div>
+            </article>
+            <article class="endCourse--cards__common">
+              <div class="tick--symbol">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 17.25L15.5 23.75L27 12.25" stroke="currentColor" stroke-width="4"></path>
+                </svg>
+              </div>
+              <div class="endCourse--card__infor">
+                <h3>
+                  Develop a clear vision of where your business is heading
+                </h3>
+                <p>
+                  Develop a clear vision of where your business is heading
+                  You’ll have a repeatable process in place that gives you the confidence to make long-term business decisions.
+                </p>
+              </div>
+            </article>
+            <article class="endCourse--cards__common">
+              <div class="tick--symbol">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 17.25L15.5 23.75L27 12.25" stroke="currentColor" stroke-width="4"></path>
+                </svg>
+              </div>
+              <div class="endCourse--card__infor">
+                <h3>
+                  Develop a clear vision of where your business is heading
+                </h3>
+                <p>
+                  Develop a clear vision of where your business is heading
+                  You’ll have a repeatable process in place that gives you the confidence to make long-term business decisions.
+                </p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="extra--padding"></section>
+
+      <section id="curriculumSection" class="wrapper--curriculum">
+        <div class="curriculum">
+          <div class="curriculum--header">
+            <div class="wrapper--headerCurric">
+              <h3 class="curriculum--title">Course Curriculum</h3>
+            </div>
+            <p class="desc">
+              We’ll bring you through the 4-pillars of your Creator Startup: Audience, Value Prop, Process, and Monetization. Once you have your pitch-deck and the roadmap for your business, we’ll focus on securing deals and building for the long-term.
+            </p>
+          </div>
+          <div class="curriculum--cards">
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>00</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>01</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>02</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div> 
+              </div>
+            </div>
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>03</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>04</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper--curriculum__item">
+              <div class="curriculum--item">
+                <div class="item--number">
+                  <p>05</p>
+                </div>
+                <div class="item--infor">
+                  <h3 class="curriculum--title">Pre-Course</h3>
+                  <p class="desc">A pre-course goal-setting exercise will help you set the financial, content, and lifestyle outcomes that you’d like to build with your career as a creator.
+                  </p>
+                </div>
+                <div class="item--detail">
+                  <p>Detail</p>
+                  <div class="item--close"><img src="./assets/close-vector.svg" alt=""></div>
+                </div>
+                <div class="item--infor__hidden">
+                  <h3 class="curriculum--title">In This Chapter</h3>
+                  <p class="desc">We’ll walk you through how a creator startup is different from a traditional startup. Before the course begins, you’ll set goals with our Creator Vision Worksheet. The exercise will help bring you clarity and support you in getting the most out of your 30-day experience with Creator Startup.
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="elseSection" class="wrapper--else">
+        <div class="else--section">
+          <div class="else--title">What else you'll get...</div>
+          <div class="else--container">
+            <div class="else--menu">
+              <div class="else--item">
+                <div class="else--item__wrapper">
+                  <div class="else--item__infor">
+                    <h2 class="else--item__title">23 Pre-recorded video modules</h2>
+                    <p class="else--item__desc">We've distilled each video into only the valuable information that you need - allowing you to focus on your business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="else--item">
+                <div class="else--item__wrapper">
+                  <div class="else--item__infor">
+                    <h2 class="else--item__title">Creator Startup Digital Workbook</h2>
+                    <p class="else--item__desc">To go along with the video content & live sessions, we’ve created a full workbook for you to be able to apply the information directly to your creator startup.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="else--item">
+                <div class="else--item__wrapper">
+                  <div class="else--item__infor">
+                    <h2 class="else--item__title">A ready-to-use brand contract template</h2>
+                    <p class="else--item__desc">Working with our lawyer, we've developed a contract template that you can feel confident using for your brand partnerships.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="else--item">
+                <div class="else--item__wrapper">
+                  <div class="else--item__infor">
+                    <h2 class="else--item__title">Our brand deals financial planner</h2>
+                    <p class="else--item__desc">We're giving you access to the custom template we built for our business that we use to plan how many partnerships we can sell, and the rate for each.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="else--item">
+                <div class="else--item__wrapper">
+                  <div class="else--item__infor">
+                    <h2 class="else--item__title">
+                      An invitation to our Creator Startup Community</h2>
+                    <p class="else--item__desc">Collaborate with like minded professional creators and get feedback as you embark on this new chapter together of building your creator business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--creator">
+        <div class="creator--section">
+          <div class="creator--blockquote">
+            <blockquote class="blockquote--wrapper">
+              <div class="quote--symbol quote--open "><img src="./assets/images/quote.svg" alt=""></div>
+              <div class="quotation">
+                <p >No one knows more about the Creator Economy than Colin and Samir.</p>
+                
+              </div>
+              <div class="quote--symbol quote--close "><img src="./assets/images/quote.svg" alt=""></div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--bonus">
+        <div class="bonus--section">
+          <div class="bonus--top">
+            <div class="bonus--title">
+                <div class="letters--animation bonus--letters">
+                  <div class="letter">B</div>
+                  <div class="letter">o</div>
+                  <div class="letter">n</div>
+                  <div class="letter">u</div>
+                  <div class="letter">s</div>
+                </div>
+                <div class="letters--animation content--letters">
+                  <div class="letter">C</div>
+                  <div class="letter">o</div>
+                  <div class="letter">n</div>
+                  <div class="letter">t</div>
+                  <div class="letter">e</div>
+                  <div class="letter">n</div>
+                  <div class="letter">t</div>
+                </div>
+            </div>
+            <div class="bonus--desc">
+              <p>Creator Startup is focused on helping professional creators build sustainable, scaleable brand deal businesses. While the core learning experience is centered around that goal, we’ve also included two pieces of bonus content for creators to professionalize their businesses.
+              </p>
+            </div>
+          </div>
+          <div class="bonus--bottom">
+            <div class="bonus--image"><img src="./assets/images/bonus.png" alt=""></div>
+            <div class="bonus--bottom__desc">
+              <div class="bonus--common bonus--desc__top">
+                <h3  class="bonus--bottome__title">Our Guide to Storytelling</h3>
+                <p class="bottom--desc__common">There are two sides to a creator startup - the business side and the creative side. For you to get opportunities to grow your business, you’ll need to learn how to tell a compelling story - something we’re incredibly passionate about. We’ve crafted this guide that breaks down how to structure a story, develop your characters, and our favorite ways to engage your audience.</p>
+              </div>
+              <div class="bonus--common bonus--desc__bottom">
+                <h3 class="bonus--bottome__title">The Creator - CEO Spectrum</h3>
+                <p class="bottom--desc__common">Creators are like athletes - we all make media, but there’s a huge range of the type of content we make, the lifestyle we prefer, and the needs we have. In this assessment, we’ll help you define where you sit on the Creator - CEO spectrum, so you can learn about how to structure your creator business so that it works for you.</p>
+              </div>
+              <div class="bonus--desc__arrow">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 173 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M125.004 143.196L170.21 106.874C170.21 106.874 139.181 90.3986 117.76 84.9787" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                  <path d="M17.48 36.9595C22.3357 107.253 78.2745 127.612 168.782 106.672" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--startup">
+        <div class="startup--container">
+          <div class="startup--top">
+            <div class="startup--title__container">
+              <h2>Hear from Creator</h2>
+              <h2>Startup Student</h2>
+              <p>Creator Startup is making a huge impact in these </br>creators’ lives.</p>
+              <div class="startup--symbol">
+                <svg width="100%" height="100%" viewBox="0 0 290 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.82935 16.3091C1.82935 16.3091 201.222 -4.32686 288.171 18.8898C197.885 -20.7226 120.493 23.0206 120.493 23.0206" stroke="currentColor" stroke-width="3.64754" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="startup--carousel ">
+            <div class="  carousel--container">
+              <div class=" carousel--item active ">
+                <div class="carousel--item__infor">
+                  <p class="carousel--item__desc">“We changed pretty much the way we do and think about everything in our business from top to bottom as a result of taking this course.”</p>
+                  <p class="carousel--item__name">@alexnguyen</p>
+                  <p class="carousel--item__sub">100k subscribers</p>
+                </div>
+                <div class="carousel--wrapper__video">
+                  <div class="carousel--video hero--video">
+                    <video src="./assets/video/video3.mp4" autoplay loop muted></video>
+                    <div class="carousel--btn hero--right__btn">
+                      <div class="wrapper--play">
+                        <img src="./assets/play.png" alt="" />
+                      </div>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class=" carousel--item ">
+                <div class="carousel--item__infor">
+                  <p class="carousel--item__desc">“We changed pretty much the way we do and think about everything in our business from top to bottom as a result of taking this course.”</p>
+                  <p class="carousel--item__name">@alexnguyen</p>
+                  <p class="carousel--item__sub">100k subscribers</p>
+                </div>
+                <div class="carousel--wrapper__video">
+                  <div class="carousel--video hero--video">
+                    <video src="./assets/video/video1.mp4" autoplay loop muted></video>
+                    <div class="carousel--btn hero--right__btn">
+                      <div class="wrapper--play">
+                        <img src="./assets/play.png" alt="" />
+                      </div>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class=" carousel--item ">
+                <div class="carousel--item__infor">
+                  <p class="carousel--item__desc">“We changed pretty much the way we do and think about everything in our business from top to bottom as a result of taking this course.”</p>
+                  <p class="carousel--item__name">@alexnguyen</p>
+                  <p class="carousel--item__sub">100k subscribers</p>
+                </div>
+                <div class="carousel--wrapper__video">
+                  <div class="carousel--video hero--video">
+                    <video src="./assets/video/video2.mp4" autoplay loop muted></video>
+                    <div class="carousel--btn hero--right__btn">
+                      <div class="wrapper--play">
+                        <img src="./assets/play.png" alt="" />
+                      </div>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class=" carousel--item ">
+                <div class="carousel--item__infor">
+                  <p class="carousel--item__desc">“We changed pretty much the way we do and think about everything in our business from top to bottom as a result of taking this course.”</p>
+                  <p class="carousel--item__name">@alexnguyen</p>
+                  <p class="carousel--item__sub">100k subscribers</p>
+                </div>
+                <div class="carousel--wrapper__video">
+                  <div class="carousel--video hero--video">
+                    <video src="./assets/video/dog.mp4" autoplay loop muted></video>
+                    <div class="carousel--btn hero--right__btn">
+                      <div class="wrapper--play">
+                        <img src="./assets/play.png" alt="" />
+                      </div>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="startup--bottom">
+            <div class="startup--bottom__container">
+              <div class="startup--wrapper__dots">
+                <div class=" dots ">
+                  <span class=" startup--dot active"></span>
+                  <span class=" startup--dot"></span>
+                  <span class=" startup--dot"></span>
+                  <span class=" startup--dot"></span>
+                </div>
+                <div class="startup--arrow">
+                  <div class=" arrow--common arrow--prev ">
+                    <svg width="60%" height="60%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.486 3.02002L1.49634 12.0094L1.51746 12.0305L1.51678 12.0312L10.5064 21.0205L12.3043 19.2227L6.34456 13.2631H22.5035V10.7205H6.38109L12.2839 4.81789L10.486 3.02002Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <div class="arrow--common arrow--next  ">
+                    <svg width="60%" height="60%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.514 3.02002L22.5037 12.0094L22.4825 12.0305L22.4832 12.0312L13.4936 21.0205L11.6957 19.2227L17.6554 13.2631H1.49646L1.49646 10.7205H17.6189L11.7161 4.81789L13.514 3.02002Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="startup--wrapper__video">
+            <div class="startup--video ">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qQJgnT1E5sk?si=Qw2Anuf2AoOUtgtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="startup--video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/J38nTBNy4Uo?si=rEBHvj6cnPY9iS9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="startup--video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/h5mQT4iiyQI?si=vfsupJgFYxulQi4V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="startup--video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Ag25boVkK64?si=pe3R8qbDwgaYh_y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="startup--close">
+              <svg
+              height="512px"
+              id="Layer_1"
+              style="enable-background: new 0 0 512 512"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="512px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                fill="currentColor"
+                d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--comment">
+        <div class="comment--section">
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment--container">
+            <div class="comment--item">
+              <div class="comment--desc">
+                I waited so long for Colin and Samir to finally release this 'Brand Course' they had been talking about on their channel and it was absolutely worth the wait. Creator Startup has helped me get way more clarity around what is possible in the world of brand deals and it has given me the tools that I need to achieve those possibilities. Thank you Colin and Samir for all the work and resources you put into this, I appreciate it.
+              </div>
+              <div class="comment--infor">
+                <div class="comment--avatar"></div>
+                <div class="comment--detail">
+                  <div class="comment--name">MitchellPehlke</div>
+                  <div class="comment--subscribers">1.5M subscribers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--areyou">
+        <div class="areyou--container">
+          <div class="areyou--left">
+            <div class="areyou--left__title">
+              How Creator Startup fits in your creator journey
+            </div>
+            <div class="areyou--infor__left">
+              <p>ARE YOU</p>
+              <div class="areyou--arrow">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 99 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M77.5573 68.7061L97.6499 43.858C97.6499 43.858 79.0136 38.6169 66.8448 38.2048" stroke="currentColor" stroke-width="2.20419" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                  <path d="M7.22658 24.081C18.0662 61.3649 50.5704 65.7823 96.8569 43.9162" stroke="currentColor" stroke-width="2.20419" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                  </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="areyou--right">
+            <div class="areyou--container__right">
+              <div class="areyou--item">
+                <div class="areyou--item__top">
+                  <div class="areyou--item__btn"><img src="./assets/close-vector.svg" alt=""></div>
+                  <div class="areyou--title__right">An Aspiring Creator</div>
+
+                </div>
+                <div class="areyou--item__bottom">
+                  <div class="areyou--desc">
+                    If you have a strong desire to have a career making videos but haven’t yet made the leap to full-time, you’re in a great place. This is exactly where we were in the first year and a half of building our channel. Your job right now is to explore - focus on finding videos that you love to make and figuring out how you can integrate video-making into your lifestyle. When you’ve answered those questions, started to build a community, and get interest from brands, then it’s a great time to join Creator Startup. We’ll walk you through exactly how you can turn that initial brand interest and channel growth into a business that supports your desired lifestyle
+                  </div>
+                </div>
+
+              </div>
+              <div class="areyou--item">
+                <div class="areyou--item__top">
+                  <div class="areyou--item__btn"><img src="./assets/close-vector.svg" alt=""></div>
+                  <div class="areyou--title__right">An Aspiring Creator</div>
+
+                </div>
+                <div class="areyou--item__bottom">
+                  <div class="areyou--desc">
+                    If you have a strong desire to have a career making videos but haven’t yet made the leap to full-time, you’re in a great place. This is exactly where we were in the first year and a half of building our channel. Your job right now is to explore - focus on finding videos that you love to make and figuring out how you can integrate video-making into your lifestyle. When you’ve answered those questions, started to build a community, and get interest from brands, then it’s a great time to join Creator Startup. We’ll walk you through exactly how you can turn that initial brand interest and channel growth into a business that supports your desired lifestyle
+                  </div>
+                </div>
+
+              </div>
+              <div class="areyou--item">
+                <div class="areyou--item__top">
+                  <div class="areyou--item__btn"><img src="./assets/close-vector.svg" alt=""></div>
+                  <div class="areyou--title__right">An Aspiring Creator</div>
+
+                </div>
+                <div class="areyou--item__bottom">
+                  <div class="areyou--desc">
+                    If you have a strong desire to have a career making videos but haven’t yet made the leap to full-time, you’re in a great place. This is exactly where we were in the first year and a half of building our channel. Your job right now is to explore - focus on finding videos that you love to make and figuring out how you can integrate video-making into your lifestyle. When you’ve answered those questions, started to build a community, and get interest from brands, then it’s a great time to join Creator Startup. We’ll walk you through exactly how you can turn that initial brand interest and channel growth into a business that supports your desired lifestyle
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--join">
+        <div class="join--container">
+          <div class="join--title">
+            <svg width="100%" height="100%" viewBox="0 0 85 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="4.46512" cy="4.46512" r="4.46512" transform="matrix(1 0 0 -1 0 29.7675)" fill="#F6E921"></circle>
+              <ellipse cx="10.0465" cy="10.2326" rx="10.0465" ry="10.2326" transform="matrix(1 0 0 -1 2.23242 20.4651)" fill="#F6E921"></ellipse>
+              <path d="M33.0668 13.611C29.4105 13.611 26.8092 10.7754 26.8092 6.84209C26.8092 2.96368 29.2104 0 33.0486 0C36.2502 0 38.142 1.92091 38.4149 4.40894H35.7954C35.5589 3.09175 34.5766 2.23191 33.0486 2.23191C30.6474 2.23191 29.5014 4.24429 29.5014 6.84209C29.5014 9.51306 30.8839 11.434 33.0668 11.434C34.613 11.434 35.7045 10.501 35.8682 9.12888H38.4513C38.3785 10.2814 37.8874 11.3974 37.0142 12.2206C36.1229 13.0622 34.8677 13.611 33.0668 13.611Z" fill="white"></path>
+              <path d="M41.6273 3.95158V5.45172H41.6818C42.2457 4.39064 42.8824 3.84181 43.9739 3.84181C44.2467 3.84181 44.4104 3.86011 44.556 3.91499V6.09202H44.5014C42.8824 5.92737 41.7182 6.7872 41.7182 8.76299V13.3366H39.2443V3.95158H41.6273Z" fill="white"></path>
+              <path d="M49.3754 13.611C46.2829 13.611 44.5366 11.434 44.5366 8.63493C44.5366 5.85419 46.4103 3.69546 49.1389 3.69546C52.1404 3.69546 53.7411 6.00055 53.7411 9.34841H46.9742C47.1561 10.7937 47.9565 11.6901 49.3572 11.6901C50.3213 11.6901 50.8852 11.251 51.1581 10.5375H53.5956C53.25 12.2023 51.7765 13.611 49.3754 13.611ZM49.1753 5.61636C47.8655 5.61636 47.2289 6.40302 47.0106 7.62874H51.1581C51.0853 6.43961 50.3031 5.61636 49.1753 5.61636Z" fill="white"></path>
+              <path d="M60.398 13.3366C60.2524 13.1536 60.1615 12.7146 60.1069 12.2938H60.0705C59.5976 13.0073 58.9245 13.5561 57.3237 13.5561C55.4137 13.5561 54.0676 12.5499 54.0676 10.6839C54.0676 8.61664 55.7411 7.95804 57.8149 7.66533C59.3611 7.4458 60.0705 7.31774 60.0705 6.60426C60.0705 5.92737 59.543 5.4883 58.5061 5.4883C57.3419 5.4883 56.778 5.90907 56.7052 6.8055H54.5042C54.5769 5.15901 55.7957 3.71375 58.5243 3.71375C61.3257 3.71375 62.4535 4.97606 62.4535 7.17139V11.9462C62.4535 12.6597 62.5627 13.0805 62.7809 13.2451V13.3366H60.398ZM57.924 11.8182C59.3429 11.8182 60.1251 10.94 60.1251 10.0253V8.61664C59.6885 8.87276 59.0155 9.01911 58.397 9.16547C57.1054 9.45818 56.4688 9.75089 56.4688 10.629C56.4688 11.5071 57.0509 11.8182 57.924 11.8182Z" fill="white"></path>
+              <path d="M62.9391 5.59807V3.95158H64.2307V1.02448H66.65V3.95158H68.2508V5.59807H66.65V10.5741C66.65 11.2693 67.032 11.5071 67.5778 11.5071C67.887 11.5071 68.3054 11.4889 68.3054 11.4889V13.3183C68.3054 13.3183 67.7415 13.3549 66.7592 13.3549C65.5586 13.3549 64.2307 12.8792 64.2307 11.1047V5.59807H62.9391Z" fill="white"></path>
+              <path d="M73.4924 13.611C70.6001 13.611 68.6173 11.4523 68.6173 8.65323C68.6173 5.85419 70.6001 3.69546 73.4924 3.69546C76.3848 3.69546 78.3676 5.85419 78.3676 8.65323C78.3676 11.4523 76.3848 13.611 73.4924 13.611ZM73.4924 11.7084C75.0023 11.7084 75.8572 10.4827 75.8572 8.65323C75.8572 6.82379 75.0023 5.57978 73.4924 5.57978C71.9644 5.57978 71.1276 6.82379 71.1276 8.65323C71.1276 10.4827 71.9644 11.7084 73.4924 11.7084Z" fill="white"></path>
+              <path d="M81.5367 3.95158V5.45172H81.5913C82.1552 4.39064 82.7919 3.84181 83.8833 3.84181C84.1562 3.84181 84.3199 3.86011 84.4654 3.91499V6.09202H84.4109C82.7919 5.92737 81.6277 6.7872 81.6277 8.76299V13.3366H79.1537V3.95158H81.5367Z" fill="white"></path>
+              <path d="M32.412 29.2193C28.8829 29.2193 26.882 27.6459 26.791 24.8835H29.3741C29.556 26.4568 30.4474 27.0788 32.3028 27.0788C33.6489 27.0788 34.8313 26.6032 34.8313 25.3957C34.8313 24.1151 33.5943 23.859 31.6116 23.4017C29.2831 22.8711 27.1548 22.2491 27.1548 19.5233C27.1548 16.9437 29.2468 15.6083 32.1391 15.6083C35.0678 15.6083 36.9596 17.0535 37.1597 19.6879H34.6312C34.4857 18.3707 33.467 17.7121 32.1209 17.7121C30.702 17.7121 29.7743 18.3158 29.7743 19.2488C29.7743 20.3099 30.6838 20.6209 32.612 21.0417C35.2861 21.6271 37.469 22.2674 37.469 25.0847C37.469 27.7374 35.3407 29.2193 32.412 29.2193Z" fill="white"></path>
+              <path d="M37.8459 21.188V19.5415H39.1374V16.6145H41.5568V19.5415H43.1576V21.188H41.5568V26.1641C41.5568 26.8593 41.9388 27.0971 42.4845 27.0971C42.7937 27.0971 43.2121 27.0788 43.2121 27.0788V28.9083C43.2121 28.9083 42.6482 28.9448 41.6659 28.9448C40.4653 28.9448 39.1374 28.4692 39.1374 26.6946V21.188H37.8459Z" fill="white"></path>
+              <path d="M50.0321 28.9265C49.8866 28.7436 49.7956 28.3045 49.741 27.8838H49.7047C49.2317 28.5972 48.5586 29.1461 46.9579 29.1461C45.0478 29.1461 43.7017 28.1399 43.7017 26.2739C43.7017 24.2066 45.3753 23.548 47.449 23.2553C48.9952 23.0358 49.7047 22.9077 49.7047 22.1942C49.7047 21.5173 49.1771 21.0783 48.1402 21.0783C46.976 21.0783 46.4121 21.499 46.3394 22.3955H44.1383C44.2111 20.749 45.4298 19.3037 48.1584 19.3037C50.9598 19.3037 52.0876 20.566 52.0876 22.7614V27.5362C52.0876 28.2497 52.1968 28.6704 52.4151 28.8351V28.9265H50.0321ZM47.5581 27.4081C48.977 27.4081 49.7592 26.53 49.7592 25.6153V24.2066C49.3226 24.4627 48.6496 24.6091 48.0311 24.7554C46.7396 25.0481 46.1029 25.3409 46.1029 26.219C46.1029 27.0971 46.685 27.4081 47.5581 27.4081Z" fill="white"></path>
+              <path d="M55.6796 19.5415V21.0417H55.7342C56.2981 19.9806 56.9348 19.4318 58.0262 19.4318C58.2991 19.4318 58.4628 19.4501 58.6083 19.505V21.682H58.5537C56.9348 21.5173 55.7705 22.3772 55.7705 24.353V28.9265H53.2966V19.5415H55.6796Z" fill="white"></path>
+              <path d="M59.1283 21.188V19.5415H60.4198V16.6145H62.8392V19.5415H64.44V21.188H62.8392V26.1641C62.8392 26.8593 63.2212 27.0971 63.7669 27.0971C64.0762 27.0971 64.4946 27.0788 64.4946 27.0788V28.9083C64.4946 28.9083 63.9307 28.9448 62.9484 28.9448C61.7478 28.9448 60.4198 28.4692 60.4198 26.6946V21.188H59.1283Z" fill="white"></path>
+              <path d="M73.6269 28.9265H71.2439V27.8289H71.1893C70.5526 28.6887 69.825 29.1827 68.5153 29.1827C66.4415 29.1827 65.2773 27.8472 65.2773 25.7982V19.5415H67.7331V25.3774C67.7331 26.4751 68.2242 27.0788 69.2793 27.0788C70.4435 27.0788 71.1529 26.2007 71.1529 24.9567V19.5415H73.6269V28.9265Z" fill="white"></path>
+              <path d="M74.8633 32V19.5415H77.2463V20.7124H77.3008C77.9011 19.8891 78.7743 19.2854 80.0476 19.2854C82.5216 19.2854 84.1042 21.3161 84.1042 24.2432C84.1042 27.2801 82.467 29.201 80.0658 29.201C78.7561 29.201 77.9011 28.6704 77.3736 27.8655H77.3372V32H74.8633ZM79.5383 27.1337C80.7935 27.1337 81.5939 26.0909 81.5939 24.3164C81.5939 22.5418 80.9754 21.2978 79.4473 21.2978C77.9011 21.2978 77.2826 22.6333 77.2826 24.3164C77.2826 26.0177 78.0648 27.1337 79.5383 27.1337Z" fill="white"></path>
+              </svg>
+          </div>
+          <div class="join--desc">
+            We made Creator Startup for our younger selves. Had we known what we know now, back in 2018 we would have had a much easier time turning our love of making videos into a career. We hope to pass along the knowledge to you so you can avoid the years of confusion and asking yourself if you’ll ever make this work.
+          </div>
+          <div class="join--wrapper__btn">
+            <button class="btn join--btn">Join the Waitlist</button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="wrapper--guarantee">
+        <div class="guarantee--container">
+          <div class="guarantee--item">
+            <div class="guarantee--logo">
+              <img src="./assets/images/guaranteeLogo.webp" alt="">
+            </div>
+            <div class="guarantee--infor">
+              <div class="guarantee--title">THIS IS OUR</div>
+              <div class="guarantee--container__letters">
+                <div class="guarantee--letters">
+                  <div class="single--letter">G</div>
+                  <div class="single--letter">u</div>
+                  <div class="single--letter">a</div>
+                  <div class="single--letter">r</div>
+                  <div class="single--letter">a</div>
+                  <div class="single--letter">n</div>
+                  <div class="single--letter">t</div>
+                  <div class="single--letter">e</div>
+                  <div class="single--letter">e</div>
+                </div>
+              </div>
+              <div class="guarantee--desc">We've packed everything we know about building a creator brand business into this course. If you complete the course and don't think it was worth it - we'll refund you the entire cost of the course.
+              </div>
+              <div class="guarantee--sign">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 290 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.82812 16.3091C1.82812 16.3091 201.221 -4.32686 288.169 18.8898C197.884 -20.7226 120.492 23.0206 120.492 23.0206" stroke="currentColor" stroke-width="3.64754" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                  </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <section id="metSection" class="wrapper--met">
+        <div class="met--container">
+          <div class="met--container__left">
+            <div class="met--item__left">
+              <div class="met--item__top">
+                <div class="met--infor__left">
+                  <div class="met--animaiton">
+                    <div class="met--words">
+                      <div class="met--single">If</div>
+                      <div class="met--single">we</div>
+                      <div class="met--single">haven't</div>
+                      <div class="met--single">met</div>
+                    </div>
+                  </div>
+                  <h3 class="met--title">
+                    Hey we're </br> Colin & Samir
+                  </h3>
+                </div>
+                <div class="met--desc">
+                  We’re YouTube creators and podcasters that break down the latest in the Creator Economy from a creator's perspective. We’ve spent 10+ years making videos together on YouTube. We built and sold our first YouTube channel. We interview the biggest creators on Youtube.
+                </div>
+              </div>
+              <div class="met--item__bottom">
+                <div class="met--btn ">
+                  <div class="wrapper--met__play wrapper--play">
+                    <svg width="100%" height="100%" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50195 20L21.3583 12L7.50195 4L7.50195 20Z" fill="currentColor"></path>
+                      </svg>
+                  </div>
+                  <span>Get to know us</span>
+                </div>
+                <div class="met--icons__container">
+                  <div class="met--icons">
+                    <div class="social--icon youtube">
+                      <svg width="100%" height="100%" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3937 11.3935H2.60628C1.1629 11.3935 0 10.1169 0 8.54683V3.45355C0 1.87706 1.16874 0.606934 2.60628 0.606934H13.3937C14.8371 0.606934 16 1.88344 16 3.45355V8.54683C16.0058 10.1233 14.8371 11.3935 13.3937 11.3935Z" fill="#FF0000"></path>
+                        <path d="M10.9649 6.00064L6.42688 3.38379V8.61748L10.9649 6.00064Z" fill="white"></path>
+                        </svg>
+                    </div>
+                    <div class="social--icon spotify">
+                      <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="14" height="14" rx="7" fill="black"></rect>
+                        <path d="M8 0C3.58199 0 0 3.58199 0 8C0 12.418 3.58199 16 8 16C12.418 16 16 12.418 16 8C16 3.58199 12.419 0 8 0ZM11.6622 11.5514C11.5638 11.7158 11.3899 11.8065 11.2113 11.8065C11.1196 11.8065 11.0259 11.7826 10.9409 11.731C7.79076 9.83638 4.05589 10.9323 4.01863 10.9437C3.74155 11.0278 3.44727 10.8711 3.36319 10.5931C3.27911 10.3151 3.43485 10.0227 3.71193 9.93766C3.882 9.88606 7.92261 8.68888 11.4826 10.83C11.731 10.9801 11.8113 11.303 11.6622 11.5514ZM12.6559 9.33668C12.5413 9.53637 12.332 9.64816 12.117 9.64816C12.0119 9.64816 11.9059 9.6214 11.8084 9.56503C7.85095 7.28914 3.86385 8.61436 3.82372 8.62773C3.49887 8.73856 3.1463 8.56658 3.03452 8.24173C2.92368 7.91688 3.09662 7.56431 3.42052 7.45253C3.60492 7.38947 7.98567 5.93431 12.4266 8.48824C12.7238 8.65926 12.826 9.03858 12.655 9.33668H12.6559ZM13.1002 7.20029C12.9808 7.20029 12.8585 7.17162 12.7457 7.11239C8.18345 4.71611 3.49791 6.1512 3.45109 6.16553C3.04885 6.29261 2.61889 6.06903 2.49182 5.66679C2.36474 5.26454 2.58832 4.83459 2.99056 4.70751C3.2065 4.63968 8.33632 3.06987 13.4566 5.75851C13.8302 5.95438 13.9744 6.41682 13.7776 6.7904C13.641 7.05028 13.3754 7.19933 13.1002 7.19933V7.20029Z" fill="#54BA5F"></path>
+                        </svg>
+                    </div>
+                    <div class="social--icon twitter">
+                      <svg width="100%" height="100%" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0811 3.11321C24.1766 3.51341 23.2174 3.77638 22.2353 3.89344C23.2702 3.27303 24.0446 2.29802 24.4147 1.14958C23.4414 1.7277 22.3762 2.13477 21.2654 2.35313C20.519 1.55461 19.5298 1.02503 18.4515 0.846718C17.3731 0.668404 16.2661 0.851349 15.3025 1.36711C14.3388 1.88287 13.5726 2.70256 13.1228 3.69873C12.6731 4.6949 12.5651 5.81175 12.8156 6.87564C10.8442 6.77648 8.91568 6.26392 7.1552 5.37122C5.39471 4.47852 3.8416 3.22562 2.59666 1.69385C1.96278 2.78577 1.76861 4.07814 2.05363 5.30812C2.33866 6.53811 3.08149 7.61334 4.13104 8.31516C3.34371 8.29037 2.5737 8.07775 1.8852 7.695V7.75666C1.88572 8.90155 2.28209 10.011 3.00713 10.8971C3.73218 11.7831 4.7413 12.3912 5.86345 12.6183C5.13256 12.8164 4.36619 12.8456 3.62235 12.7037C3.93981 13.6882 4.55701 14.5489 5.38765 15.1655C6.21829 15.782 7.22085 16.1236 8.25513 16.1424C7.22646 16.9503 6.04864 17.5475 4.789 17.8999C3.52937 18.2523 2.21263 18.353 0.914062 18.1961C3.18089 19.654 5.81969 20.4279 8.51482 20.4254C10.3714 20.4381 12.212 20.0819 13.9298 19.3773C15.6475 18.6727 17.2081 17.6338 18.521 16.3209C19.8338 15.0081 20.8727 13.4475 21.5773 11.7297C22.2819 10.012 22.6382 8.17137 22.6254 6.31477C22.6254 6.10133 22.6254 5.88553 22.61 5.67446C23.5809 4.97261 24.4189 4.10328 25.0847 3.10728L25.0811 3.11321Z" fill="#1DA1F2"></path>
+                        </svg>
+                    </div>
+                    <div class="social--icon intagram">
+                      <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="14" height="14" rx="7" fill="white"></rect>
+                        <path d="M8 0C10.1736 0 10.4448 0.00799995 11.2976 0.048C11.9614 0.0617048 12.6181 0.187475 13.24 0.42C13.7743 0.620096 14.2582 0.934962 14.6576 1.3424C15.0644 1.74232 15.3792 2.22607 15.58 2.76C15.8122 3.38197 15.938 4.03863 15.952 4.7024C15.9896 5.5552 16 5.8224 16 8C16 10.1776 15.992 10.4448 15.952 11.2976C15.9379 11.9614 15.8121 12.618 15.58 13.24C15.3748 13.7717 15.0606 14.2546 14.6576 14.6576C14.2546 15.0606 13.7717 15.3748 13.24 15.58C12.618 15.8122 11.9614 15.938 11.2976 15.952C10.4448 15.9896 10.1776 16 8 16C5.8224 16 5.5552 15.992 4.7024 15.952C4.03864 15.9379 3.382 15.8121 2.76 15.58C2.2283 15.3748 1.74542 15.0606 1.34242 14.6576C0.939423 14.2546 0.625214 13.7717 0.42 13.24C0.187386 12.6181 0.0616129 11.9614 0.048 11.2976C0.0104 10.4448 0 10.1736 0 8C0 5.8264 0.00799995 5.5552 0.048 4.7024C0.0616129 4.03859 0.187386 3.38187 0.42 2.76C0.620189 2.22574 0.935043 1.74186 1.3424 1.3424C1.74219 0.935445 2.22598 0.620653 2.76 0.42C3.38187 0.187386 4.03859 0.0616129 4.7024 0.048C5.5552 0.0104 5.8264 0 8 0ZM8 4C7.20887 4 6.43552 4.2346 5.77772 4.67412C5.11992 5.11365 4.60723 5.73836 4.30448 6.46927C4.00173 7.20017 3.92252 8.00444 4.07686 8.78036C4.2312 9.55628 4.61216 10.269 5.17157 10.8284C5.73098 11.3878 6.44371 11.7688 7.21964 11.9231C7.99556 12.0775 8.79983 11.9983 9.53073 11.6955C10.2616 11.3928 10.8864 10.8801 11.3259 10.2223C11.7654 9.56448 12 8.79113 12 8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4ZM13.2 3.8C13.2 3.60222 13.1414 3.40888 13.0315 3.24443C12.9216 3.07998 12.7654 2.95181 12.5827 2.87612C12.4 2.80043 12.1989 2.78063 12.0049 2.81921C11.8109 2.8578 11.6327 2.95304 11.4929 3.09289C11.353 3.23275 11.2578 3.41093 11.2192 3.60491C11.1806 3.79889 11.2004 3.99996 11.2761 4.18268C11.3518 4.36541 11.48 4.52159 11.6444 4.63147C11.8089 4.74135 12.0022 4.8 12.2 4.8C12.4652 4.8 12.7196 4.69464 12.9071 4.50711C13.0946 4.31957 13.2 4.06522 13.2 3.8ZM8 5.6C8.47468 5.6 8.93869 5.74076 9.33337 6.00447C9.72805 6.26819 10.0357 6.64302 10.2173 7.08156C10.399 7.5201 10.4465 8.00266 10.3539 8.46822C10.2613 8.93377 10.0327 9.36141 9.69706 9.69706C9.36141 10.0327 8.93377 10.2613 8.46822 10.3539C8.00266 10.4465 7.5201 10.399 7.08156 10.2173C6.64302 10.0357 6.26819 9.72805 6.00447 9.33337C5.74076 8.93869 5.6 8.47468 5.6 8C5.6 7.36348 5.85286 6.75303 6.30294 6.30294C6.75303 5.85286 7.36348 5.6 8 5.6Z" fill="url(#paint0_linear_1645_10570)"></path>
+                        <defs>
+                        <linearGradient id="paint0_linear_1645_10570" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F9CE34"></stop>
+                        <stop offset="0.515626" stop-color="#EE2A7B"></stop>
+                        <stop offset="1" stop-color="#6228D7"></stop>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div> 
+          <div class="met--container__right">
+            <div class="met--img__right">
+              <img src="./assets/cat_images/cat5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--tickclose">
+        <div class="tickclose--container">
+          <div class="tickclose--container__left">
+            <div class="tickclose--wrapper__titleLeft">
+              <div class="tickclose--title__left">This course is for you if...</div>
+            </div>
+            <div class="tickclose--container__tick">
+              <div class="tickclose--item">
+                <div class="tickclose--tick">
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.01758L8.5 13.5176L20 2.01758" stroke="white" stroke-width="3"></path>
+                    </svg>
+                </div>
+                <div class="tickclose--tick__desc">
+                  You’ve done at least one brand deal before
+                </div>
+              </div>
+              <div class="tickclose--item">
+                <div class="tickclose--tick">
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.01758L8.5 13.5176L20 2.01758" stroke="white" stroke-width="3"></path>
+                    </svg>
+                </div>
+                <div class="tickclose--tick__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+              <div class="tickclose--item">
+                <div class="tickclose--tick">
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.01758L8.5 13.5176L20 2.01758" stroke="white" stroke-width="3"></path>
+                    </svg>
+                </div>
+                <div class="tickclose--tick__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+              <div class="tickclose--item">
+                <div class="tickclose--tick">
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.01758L8.5 13.5176L20 2.01758" stroke="white" stroke-width="3"></path>
+                    </svg>
+                </div>
+                <div class="tickclose--tick__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+              <div class="tickclose--item">
+                <div class="tickclose--tick">
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.01758L8.5 13.5176L20 2.01758" stroke="white" stroke-width="3"></path>
+                    </svg>
+                </div>
+                <div class="tickclose--tick__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tickclose--container__right">
+            <div class="tickclose--wrapper__titleRight">
+              <div class="tickclose--title__right">This course is not for you if...</div>
+            </div>
+            <div class="tickclose--container__close">
+              <div class="tickclose--item__right">
+                <div class="tickclose--close">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99128 8.42504L12.7935 4.5963C15.4513 1.9201 16.7211 0.767578 17.012 0.767578C17.5723 0.767578 18.0937 1.5662 17.8377 2.03171C17.7337 2.22068 15.9972 4.03356 13.9787 6.06018L10.309 9.74496L14.1544 13.6367C16.2696 15.7772 18 17.6597 18 17.8199C18 18.213 17.3987 18.7375 16.948 18.7375C16.7238 18.7375 15.1125 17.2634 12.7757 14.9201L8.96894 11.1025L5.17778 14.9201C1.31079 18.8141 0.843834 19.1516 0.207781 18.5105C-0.347006 17.9514 0.0135288 17.462 3.73619 13.7201C5.80069 11.6449 7.48983 9.87681 7.48983 9.79093C7.48983 9.70505 5.82171 7.93548 3.78311 5.85853C1.74452 3.78159 0.0488071 1.90953 0.0150242 1.69824C-0.0696201 1.16803 0.30913 0.767578 0.895447 0.767578C1.28414 0.767578 2.18144 1.56771 5.18904 4.5963L8.99128 8.42504Z" fill="#1D1D1F"></path>
+                  </svg>
+                </div>
+                <div class="tickclose--close__desc">
+                  You haven’t started to make content 
+                </div>
+              </div>
+              <div class="tickclose--item__right">
+                <div class="tickclose--close">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99128 8.42504L12.7935 4.5963C15.4513 1.9201 16.7211 0.767578 17.012 0.767578C17.5723 0.767578 18.0937 1.5662 17.8377 2.03171C17.7337 2.22068 15.9972 4.03356 13.9787 6.06018L10.309 9.74496L14.1544 13.6367C16.2696 15.7772 18 17.6597 18 17.8199C18 18.213 17.3987 18.7375 16.948 18.7375C16.7238 18.7375 15.1125 17.2634 12.7757 14.9201L8.96894 11.1025L5.17778 14.9201C1.31079 18.8141 0.843834 19.1516 0.207781 18.5105C-0.347006 17.9514 0.0135288 17.462 3.73619 13.7201C5.80069 11.6449 7.48983 9.87681 7.48983 9.79093C7.48983 9.70505 5.82171 7.93548 3.78311 5.85853C1.74452 3.78159 0.0488071 1.90953 0.0150242 1.69824C-0.0696201 1.16803 0.30913 0.767578 0.895447 0.767578C1.28414 0.767578 2.18144 1.56771 5.18904 4.5963L8.99128 8.42504Z" fill="#1D1D1F"></path>
+                  </svg>
+                </div>
+                <div class="tickclose--close__desc">
+                  You aren’t ready to create videos on a consistent basis
+                </div>
+              </div>
+              <div class="tickclose--item__right">
+                <div class="tickclose--close">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99128 8.42504L12.7935 4.5963C15.4513 1.9201 16.7211 0.767578 17.012 0.767578C17.5723 0.767578 18.0937 1.5662 17.8377 2.03171C17.7337 2.22068 15.9972 4.03356 13.9787 6.06018L10.309 9.74496L14.1544 13.6367C16.2696 15.7772 18 17.6597 18 17.8199C18 18.213 17.3987 18.7375 16.948 18.7375C16.7238 18.7375 15.1125 17.2634 12.7757 14.9201L8.96894 11.1025L5.17778 14.9201C1.31079 18.8141 0.843834 19.1516 0.207781 18.5105C-0.347006 17.9514 0.0135288 17.462 3.73619 13.7201C5.80069 11.6449 7.48983 9.87681 7.48983 9.79093C7.48983 9.70505 5.82171 7.93548 3.78311 5.85853C1.74452 3.78159 0.0488071 1.90953 0.0150242 1.69824C-0.0696201 1.16803 0.30913 0.767578 0.895447 0.767578C1.28414 0.767578 2.18144 1.56771 5.18904 4.5963L8.99128 8.42504Z" fill="#1D1D1F"></path>
+                  </svg>
+                </div>
+                <div class="tickclose--close__desc">
+                  You want to know how to go viral on YouTube
+
+                </div>
+              </div>
+              <div class="tickclose--item__right">
+                <div class="tickclose--close">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99128 8.42504L12.7935 4.5963C15.4513 1.9201 16.7211 0.767578 17.012 0.767578C17.5723 0.767578 18.0937 1.5662 17.8377 2.03171C17.7337 2.22068 15.9972 4.03356 13.9787 6.06018L10.309 9.74496L14.1544 13.6367C16.2696 15.7772 18 17.6597 18 17.8199C18 18.213 17.3987 18.7375 16.948 18.7375C16.7238 18.7375 15.1125 17.2634 12.7757 14.9201L8.96894 11.1025L5.17778 14.9201C1.31079 18.8141 0.843834 19.1516 0.207781 18.5105C-0.347006 17.9514 0.0135288 17.462 3.73619 13.7201C5.80069 11.6449 7.48983 9.87681 7.48983 9.79093C7.48983 9.70505 5.82171 7.93548 3.78311 5.85853C1.74452 3.78159 0.0488071 1.90953 0.0150242 1.69824C-0.0696201 1.16803 0.30913 0.767578 0.895447 0.767578C1.28414 0.767578 2.18144 1.56771 5.18904 4.5963L8.99128 8.42504Z" fill="#1D1D1F"></path>
+                  </svg>
+                </div>
+                <div class="tickclose--close__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+              <div class="tickclose--item__right">
+                <div class="tickclose--close">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99128 8.42504L12.7935 4.5963C15.4513 1.9201 16.7211 0.767578 17.012 0.767578C17.5723 0.767578 18.0937 1.5662 17.8377 2.03171C17.7337 2.22068 15.9972 4.03356 13.9787 6.06018L10.309 9.74496L14.1544 13.6367C16.2696 15.7772 18 17.6597 18 17.8199C18 18.213 17.3987 18.7375 16.948 18.7375C16.7238 18.7375 15.1125 17.2634 12.7757 14.9201L8.96894 11.1025L5.17778 14.9201C1.31079 18.8141 0.843834 19.1516 0.207781 18.5105C-0.347006 17.9514 0.0135288 17.462 3.73619 13.7201C5.80069 11.6449 7.48983 9.87681 7.48983 9.79093C7.48983 9.70505 5.82171 7.93548 3.78311 5.85853C1.74452 3.78159 0.0488071 1.90953 0.0150242 1.69824C-0.0696201 1.16803 0.30913 0.767578 0.895447 0.767578C1.28414 0.767578 2.18144 1.56771 5.18904 4.5963L8.99128 8.42504Z" fill="#1D1D1F"></path>
+                  </svg>
+                </div>
+                <div class="tickclose--close__desc">
+                  You have already started making videos on a regular basis
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--ready wrapper--join">
+        <div class="ready--container join--container">
+          <div class="ready--front">
+            <div class="ready--title join--title">
+              <svg width="100%" height="100%" viewBox="0 0 85 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4.46512" cy="4.46512" r="4.46512" transform="matrix(1 0 0 -1 0 29.7675)" fill="#F6E921"></circle>
+                <ellipse cx="10.0465" cy="10.2326" rx="10.0465" ry="10.2326" transform="matrix(1 0 0 -1 2.23242 20.4651)" fill="#F6E921"></ellipse>
+                <path d="M33.0668 13.611C29.4105 13.611 26.8092 10.7754 26.8092 6.84209C26.8092 2.96368 29.2104 0 33.0486 0C36.2502 0 38.142 1.92091 38.4149 4.40894H35.7954C35.5589 3.09175 34.5766 2.23191 33.0486 2.23191C30.6474 2.23191 29.5014 4.24429 29.5014 6.84209C29.5014 9.51306 30.8839 11.434 33.0668 11.434C34.613 11.434 35.7045 10.501 35.8682 9.12888H38.4513C38.3785 10.2814 37.8874 11.3974 37.0142 12.2206C36.1229 13.0622 34.8677 13.611 33.0668 13.611Z" fill="white"></path>
+                <path d="M41.6273 3.95158V5.45172H41.6818C42.2457 4.39064 42.8824 3.84181 43.9739 3.84181C44.2467 3.84181 44.4104 3.86011 44.556 3.91499V6.09202H44.5014C42.8824 5.92737 41.7182 6.7872 41.7182 8.76299V13.3366H39.2443V3.95158H41.6273Z" fill="white"></path>
+                <path d="M49.3754 13.611C46.2829 13.611 44.5366 11.434 44.5366 8.63493C44.5366 5.85419 46.4103 3.69546 49.1389 3.69546C52.1404 3.69546 53.7411 6.00055 53.7411 9.34841H46.9742C47.1561 10.7937 47.9565 11.6901 49.3572 11.6901C50.3213 11.6901 50.8852 11.251 51.1581 10.5375H53.5956C53.25 12.2023 51.7765 13.611 49.3754 13.611ZM49.1753 5.61636C47.8655 5.61636 47.2289 6.40302 47.0106 7.62874H51.1581C51.0853 6.43961 50.3031 5.61636 49.1753 5.61636Z" fill="white"></path>
+                <path d="M60.398 13.3366C60.2524 13.1536 60.1615 12.7146 60.1069 12.2938H60.0705C59.5976 13.0073 58.9245 13.5561 57.3237 13.5561C55.4137 13.5561 54.0676 12.5499 54.0676 10.6839C54.0676 8.61664 55.7411 7.95804 57.8149 7.66533C59.3611 7.4458 60.0705 7.31774 60.0705 6.60426C60.0705 5.92737 59.543 5.4883 58.5061 5.4883C57.3419 5.4883 56.778 5.90907 56.7052 6.8055H54.5042C54.5769 5.15901 55.7957 3.71375 58.5243 3.71375C61.3257 3.71375 62.4535 4.97606 62.4535 7.17139V11.9462C62.4535 12.6597 62.5627 13.0805 62.7809 13.2451V13.3366H60.398ZM57.924 11.8182C59.3429 11.8182 60.1251 10.94 60.1251 10.0253V8.61664C59.6885 8.87276 59.0155 9.01911 58.397 9.16547C57.1054 9.45818 56.4688 9.75089 56.4688 10.629C56.4688 11.5071 57.0509 11.8182 57.924 11.8182Z" fill="white"></path>
+                <path d="M62.9391 5.59807V3.95158H64.2307V1.02448H66.65V3.95158H68.2508V5.59807H66.65V10.5741C66.65 11.2693 67.032 11.5071 67.5778 11.5071C67.887 11.5071 68.3054 11.4889 68.3054 11.4889V13.3183C68.3054 13.3183 67.7415 13.3549 66.7592 13.3549C65.5586 13.3549 64.2307 12.8792 64.2307 11.1047V5.59807H62.9391Z" fill="white"></path>
+                <path d="M73.4924 13.611C70.6001 13.611 68.6173 11.4523 68.6173 8.65323C68.6173 5.85419 70.6001 3.69546 73.4924 3.69546C76.3848 3.69546 78.3676 5.85419 78.3676 8.65323C78.3676 11.4523 76.3848 13.611 73.4924 13.611ZM73.4924 11.7084C75.0023 11.7084 75.8572 10.4827 75.8572 8.65323C75.8572 6.82379 75.0023 5.57978 73.4924 5.57978C71.9644 5.57978 71.1276 6.82379 71.1276 8.65323C71.1276 10.4827 71.9644 11.7084 73.4924 11.7084Z" fill="white"></path>
+                <path d="M81.5367 3.95158V5.45172H81.5913C82.1552 4.39064 82.7919 3.84181 83.8833 3.84181C84.1562 3.84181 84.3199 3.86011 84.4654 3.91499V6.09202H84.4109C82.7919 5.92737 81.6277 6.7872 81.6277 8.76299V13.3366H79.1537V3.95158H81.5367Z" fill="white"></path>
+                <path d="M32.412 29.2193C28.8829 29.2193 26.882 27.6459 26.791 24.8835H29.3741C29.556 26.4568 30.4474 27.0788 32.3028 27.0788C33.6489 27.0788 34.8313 26.6032 34.8313 25.3957C34.8313 24.1151 33.5943 23.859 31.6116 23.4017C29.2831 22.8711 27.1548 22.2491 27.1548 19.5233C27.1548 16.9437 29.2468 15.6083 32.1391 15.6083C35.0678 15.6083 36.9596 17.0535 37.1597 19.6879H34.6312C34.4857 18.3707 33.467 17.7121 32.1209 17.7121C30.702 17.7121 29.7743 18.3158 29.7743 19.2488C29.7743 20.3099 30.6838 20.6209 32.612 21.0417C35.2861 21.6271 37.469 22.2674 37.469 25.0847C37.469 27.7374 35.3407 29.2193 32.412 29.2193Z" fill="white"></path>
+                <path d="M37.8459 21.188V19.5415H39.1374V16.6145H41.5568V19.5415H43.1576V21.188H41.5568V26.1641C41.5568 26.8593 41.9388 27.0971 42.4845 27.0971C42.7937 27.0971 43.2121 27.0788 43.2121 27.0788V28.9083C43.2121 28.9083 42.6482 28.9448 41.6659 28.9448C40.4653 28.9448 39.1374 28.4692 39.1374 26.6946V21.188H37.8459Z" fill="white"></path>
+                <path d="M50.0321 28.9265C49.8866 28.7436 49.7956 28.3045 49.741 27.8838H49.7047C49.2317 28.5972 48.5586 29.1461 46.9579 29.1461C45.0478 29.1461 43.7017 28.1399 43.7017 26.2739C43.7017 24.2066 45.3753 23.548 47.449 23.2553C48.9952 23.0358 49.7047 22.9077 49.7047 22.1942C49.7047 21.5173 49.1771 21.0783 48.1402 21.0783C46.976 21.0783 46.4121 21.499 46.3394 22.3955H44.1383C44.2111 20.749 45.4298 19.3037 48.1584 19.3037C50.9598 19.3037 52.0876 20.566 52.0876 22.7614V27.5362C52.0876 28.2497 52.1968 28.6704 52.4151 28.8351V28.9265H50.0321ZM47.5581 27.4081C48.977 27.4081 49.7592 26.53 49.7592 25.6153V24.2066C49.3226 24.4627 48.6496 24.6091 48.0311 24.7554C46.7396 25.0481 46.1029 25.3409 46.1029 26.219C46.1029 27.0971 46.685 27.4081 47.5581 27.4081Z" fill="white"></path>
+                <path d="M55.6796 19.5415V21.0417H55.7342C56.2981 19.9806 56.9348 19.4318 58.0262 19.4318C58.2991 19.4318 58.4628 19.4501 58.6083 19.505V21.682H58.5537C56.9348 21.5173 55.7705 22.3772 55.7705 24.353V28.9265H53.2966V19.5415H55.6796Z" fill="white"></path>
+                <path d="M59.1283 21.188V19.5415H60.4198V16.6145H62.8392V19.5415H64.44V21.188H62.8392V26.1641C62.8392 26.8593 63.2212 27.0971 63.7669 27.0971C64.0762 27.0971 64.4946 27.0788 64.4946 27.0788V28.9083C64.4946 28.9083 63.9307 28.9448 62.9484 28.9448C61.7478 28.9448 60.4198 28.4692 60.4198 26.6946V21.188H59.1283Z" fill="white"></path>
+                <path d="M73.6269 28.9265H71.2439V27.8289H71.1893C70.5526 28.6887 69.825 29.1827 68.5153 29.1827C66.4415 29.1827 65.2773 27.8472 65.2773 25.7982V19.5415H67.7331V25.3774C67.7331 26.4751 68.2242 27.0788 69.2793 27.0788C70.4435 27.0788 71.1529 26.2007 71.1529 24.9567V19.5415H73.6269V28.9265Z" fill="white"></path>
+                <path d="M74.8633 32V19.5415H77.2463V20.7124H77.3008C77.9011 19.8891 78.7743 19.2854 80.0476 19.2854C82.5216 19.2854 84.1042 21.3161 84.1042 24.2432C84.1042 27.2801 82.467 29.201 80.0658 29.201C78.7561 29.201 77.9011 28.6704 77.3736 27.8655H77.3372V32H74.8633ZM79.5383 27.1337C80.7935 27.1337 81.5939 26.0909 81.5939 24.3164C81.5939 22.5418 80.9754 21.2978 79.4473 21.2978C77.9011 21.2978 77.2826 22.6333 77.2826 24.3164C77.2826 26.0177 78.0648 27.1337 79.5383 27.1337Z" fill="white"></path>
+                </svg>
+            </div>
+            <div class="ready--desc join--desc">
+              If you’re ready to commit and transform your creator business, join our waitlist.
+            </div>
+            <div class="ready--wrapper__btn join--wrapper__btn">
+              <button class="btn ready--btn join--btn">Join the Waitlist</button>
+            </div>
+          </div>
+          <div class="ready--back">
+            <div class="ready--back__desc">Welcome to us</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="wrapper--literally">
+        <div class="literally--container">
+          <div class="literally">
+            <div class="literally--title">Go ahead, write us off.</div>
+            <div class="literally--circle">
+              <div class="literally--point">Literally
+                <div class="circle--word">
+                  <svg width=" 100%" height=" 100%" viewBox="0 0 191 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 23.8074C20.774 4.38014 66.9765 -8.47654 146.07 13.6624C236.076 38.8543 171.546 80.9609 55.5326 75.4238C-27.7325 71.4511 5.27203 -2.47486 94.5388 3.19498" stroke="currentColor" stroke-width="3.79253" stroke-miterlimit="10" stroke-linecap="round" ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="literally--desc">
+              For business owners like you, Creator Startup is tax deductible. It’s a business expense, so you can deduct 100% of the cost from your taxes.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fagsSection" class="wrapper--fags">
+        <div class="fags--container">
+          <div class="fags--wrapper__title">
+            <div class="fags--title">
+              FAGS
+              <div class="fags--arrow">
+                <svg width=" 100%" height=" 100%" viewBox="0 0 83 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40.6797 55.9307C23.0748 48.2539 9.07474 52.7371 9.07474 52.7371C9.07474 52.7371 15.1824 44.8842 18.775 26.2128" stroke="currentColor" stroke-width="3.03401" stroke-linecap="round" stroke-linejoin="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                  <path d="M72.4121 15.3994C48.496 22.2619 27.8966 36.1431 9.8469 51.9681" stroke="currentColor" stroke-width="3.03401" stroke-linecap="round" stroke-linejoin="round" ></path>
+                </svg>
+              </div>
+            </div>
+            
+          </div>
+          <div class="fags--blocks">
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  How is this different from the content that is already on YouTube?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  How long is the course?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  How is this different from the content that is already on YouTube?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  Do I need a certain amount of subscribers to take the course?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  What experience with YouTube do I need to have?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+            <div class="fags--wrapper__item">
+              <div class="fags--item">
+                <div class="fags--btn">
+                  <img src="./assets/close-vector.svg" alt="">
+                </div>
+                <div class="fags--mainkey">
+                  How is this different from the content that is already on YouTube?
+                </div>
+              </div>
+              <div class="fags--wrapper__desc">
+                <div class="fags--desc">
+                  The course is 5 chapters that consist of 20 videos and 3 conversations with industry experts. The course content and exercises are designed to be completed in 30 days, but you can go through each chapter at your own pace. We know your time is very important, so we’ve worked hard to make sure each video is concise and valuable. We’ve all been in a class where you’re asking yourself, “When are they going to get to the point?” Creator Startup will not be that.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--show">
+        <div class="container--show">
+          <div class="show--common colinshow">
+            <div class="show--img"><img src="./assets/cat_images/cat3.jpg" alt=""></div>
+            <div class="show--title">The Colin & Samir Show</div>
+            <div class="show--btn">
+              <div class="show--arrow">
+                <svg width="38" height="33" viewBox="0 0 38 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path   d="M21.7254 0.236328L37.9067 16.4172L37.8687 16.4552L37.8699 16.4564L21.6886 32.6372L18.4523 29.4011L29.1796 18.6742H0.09375L0.09375 14.0976L29.1145 14.0976L18.4891 3.47249L21.7254 0.236328Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <div class="show--btn__desc">
+                View Show
+              </div>
+            </div>
+          </div>
+          <div class="show--common show-creator ">
+            <div class="show--img"><img src="./assets/cat_images/cat5.jpg" alt=""></div>
+            <div class="show--title show--creator__title">Creator Support</div>
+            <div class="show--btn">
+              <div class="show--arrow">
+                <svg width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7254 0.236328L37.9067 16.4172L37.8687 16.4552L37.8699 16.4564L21.6886 32.6372L18.4523 29.4011L29.1796 18.6742H0.09375L0.09375 14.0976L29.1145 14.0976L18.4891 3.47249L21.7254 0.236328Z" fill="#1D1D1F"></path>
+                </svg>
+              </div>
+              <div class="show--btn__desc">
+                View Show
+              </div>
+            </div>
+          </div>
+          <div class="show--common show--pulish">
+            <div class="show--img"><img src="./assets/cat_images/cat6.jpg" alt=""></div>
+            <div class="show--title show--push__title">The Publish Press</div>
+            <div class="show--btn">
+              <div class="show--arrow">
+                <svg width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7254 0.236328L37.9067 16.4172L37.8687 16.4552L37.8699 16.4564L21.6886 32.6372L18.4523 29.4011L29.1796 18.6742H0.09375L0.09375 14.0976L29.1145 14.0976L18.4891 3.47249L21.7254 0.236328Z" fill="#1D1D1F"></path>
+                </svg>
+              </div>
+              <div class="show--btn__desc">
+                View Show
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="show--container__img">
+          <div class="show--wrapper__img">
+            <img src="./assets/cat_images/cat3.jpg" alt="">
+          </div>
+          <div class="show--wrapper__img">
+            <img src="./assets/cat_images/cat5.jpg" alt="">
+          </div>
+          <div class="show--wrapper__img">
+            <img src="./assets/cat_images/cat6.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--contact">
+        <div class="contact--container">
+          <div class="email--contact__wrapper">
+            <div class="email--contact">
+              <div class="email--title">
+                Want the latest creator news?
+              </div>
+              <div class="email--desc">
+                We curate the most important news about the creator economy and deliver it straight to your inbox, three times a week, for free via our newsletter, The Publish Press.
+              </div>
+              <form class="email--form" action="#!">
+                <input type="email" class="email" placeholder="Email Address">
+                <div class="email--btn ">
+                  <div class="email--arrow">
+                    <svg width="38" height="33" viewBox="0 0 38 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path   d="M21.7254 0.236328L37.9067 16.4172L37.8687 16.4552L37.8699 16.4564L21.6886 32.6372L18.4523 29.4011L29.1796 18.6742H0.09375L0.09375 14.0976L29.1145 14.0976L18.4891 3.47249L21.7254 0.236328Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <div class="email--btn__desc ">
+                    Subscribe
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="discord--contact__wrapper">
+            <div class="discord--contact">
+              <div class="discord--title">Get in on our Discord</div>
+              <div class="discord--desc">
+                Join thousands of creators to share insights, give and get feedback, and support each other to bring ideas to life. It’s also the #1 place to stay up-to-date with all things Colin & Samir.
+              </div>
+              <div class="discord--btn">
+                <div class="discord--arrow ">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.3303 5.13681C18.7767 4.45062 17.1156 3.95193 15.3789 3.66797C15.1656 4.032 14.9164 4.52162 14.7446 4.91111C12.8985 4.64902 11.0693 4.64902 9.25716 4.91111C9.08539 4.52162 8.83055 4.032 8.61536 3.66797C6.87681 3.95193 5.21376 4.45245 3.66019 5.14044C0.526643 9.61061 -0.322811 13.9697 0.101917 18.267C2.18025 19.7322 4.19441 20.6222 6.17457 21.2046C6.66349 20.5694 7.09953 19.8941 7.47518 19.1825C6.75975 18.9259 6.07453 18.6092 5.42707 18.2415C5.59884 18.1214 5.76686 17.9958 5.92918 17.8665C9.8782 19.6102 14.1689 19.6102 18.0707 17.8665C18.235 17.9958 18.403 18.1214 18.5728 18.2415C17.9235 18.611 17.2364 18.9277 16.521 19.1843C16.8966 19.8941 17.3308 20.5712 17.8216 21.2064C19.8036 20.624 21.8197 19.734 23.898 18.267C24.3964 13.2854 23.0467 8.96629 20.3303 5.13681ZM8.01318 15.6242C6.82772 15.6242 5.85555 14.5795 5.85555 13.3072C5.85555 12.035 6.80696 10.9884 8.01318 10.9884C9.21942 10.9884 10.1916 12.0331 10.1708 13.3072C10.1727 14.5795 9.21942 15.6242 8.01318 15.6242ZM15.9867 15.6242C14.8013 15.6242 13.8291 14.5795 13.8291 13.3072C13.8291 12.035 14.7805 10.9884 15.9867 10.9884C17.193 10.9884 18.1651 12.0331 18.1444 13.3072C18.1444 14.5795 17.193 15.6242 15.9867 15.6242Z" fill="#5865F2"></path>
+                    </svg>
+                </div>
+                <div class="discord--btn__desc ">
+                  Join Discord
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper--hear">
+        <div class="hear--container">
+          <div class="hear-infor">
+            <div class="hear--title">
+              We’d love to hear from you
+            </div>
+            <div class="hear--desc">
+              Have a question for us? Want to suggest a creator we should interview? Interested in partnering with us? Just want to say hi? We’ve got a form for that.
+            </div>
+            <div class="hear--btn email--btn ">
+              <div class="hear--arrow email--arrow">
+                <svg width="38" height="33" viewBox="0 0 38 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path   d="M21.7254 0.236328L37.9067 16.4172L37.8687 16.4552L37.8699 16.4564L21.6886 32.6372L18.4523 29.4011L29.1796 18.6742H0.09375L0.09375 14.0976L29.1145 14.0976L18.4891 3.47249L21.7254 0.236328Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <div class="hear--btn__desc email--btn__desc ">
+                Get in touch
+              </div>
+            </div>
+          </div>
+          <div class="hear--contact__wrapper">
+            <div class="hear--contact">
+              <div class="hear--social">
+                <div class="hear--icons">
+                  <div class="hear--common__icon social--icon youtube">
+                    <svg width="100%" height="100%" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3937 11.3935H2.60628C1.1629 11.3935 0 10.1169 0 8.54683V3.45355C0 1.87706 1.16874 0.606934 2.60628 0.606934H13.3937C14.8371 0.606934 16 1.88344 16 3.45355V8.54683C16.0058 10.1233 14.8371 11.3935 13.3937 11.3935Z" fill="#FF0000"></path>
+                      <path d="M10.9649 6.00064L6.42688 3.38379V8.61748L10.9649 6.00064Z" fill="white"></path>
+                      </svg>
+                  </div>
+                  <div class="hear--common__icon social--icon spotify">
+                    <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="14" height="14" rx="7" fill="black"></rect>
+                      <path d="M8 0C3.58199 0 0 3.58199 0 8C0 12.418 3.58199 16 8 16C12.418 16 16 12.418 16 8C16 3.58199 12.419 0 8 0ZM11.6622 11.5514C11.5638 11.7158 11.3899 11.8065 11.2113 11.8065C11.1196 11.8065 11.0259 11.7826 10.9409 11.731C7.79076 9.83638 4.05589 10.9323 4.01863 10.9437C3.74155 11.0278 3.44727 10.8711 3.36319 10.5931C3.27911 10.3151 3.43485 10.0227 3.71193 9.93766C3.882 9.88606 7.92261 8.68888 11.4826 10.83C11.731 10.9801 11.8113 11.303 11.6622 11.5514ZM12.6559 9.33668C12.5413 9.53637 12.332 9.64816 12.117 9.64816C12.0119 9.64816 11.9059 9.6214 11.8084 9.56503C7.85095 7.28914 3.86385 8.61436 3.82372 8.62773C3.49887 8.73856 3.1463 8.56658 3.03452 8.24173C2.92368 7.91688 3.09662 7.56431 3.42052 7.45253C3.60492 7.38947 7.98567 5.93431 12.4266 8.48824C12.7238 8.65926 12.826 9.03858 12.655 9.33668H12.6559ZM13.1002 7.20029C12.9808 7.20029 12.8585 7.17162 12.7457 7.11239C8.18345 4.71611 3.49791 6.1512 3.45109 6.16553C3.04885 6.29261 2.61889 6.06903 2.49182 5.66679C2.36474 5.26454 2.58832 4.83459 2.99056 4.70751C3.2065 4.63968 8.33632 3.06987 13.4566 5.75851C13.8302 5.95438 13.9744 6.41682 13.7776 6.7904C13.641 7.05028 13.3754 7.19933 13.1002 7.19933V7.20029Z" fill="#54BA5F"></path>
+                      </svg>
+                  </div>
+                  <div class="hear--common__icon social--icon twitter">
+                    <svg width="100%" height="100%" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25.0811 3.11321C24.1766 3.51341 23.2174 3.77638 22.2353 3.89344C23.2702 3.27303 24.0446 2.29802 24.4147 1.14958C23.4414 1.7277 22.3762 2.13477 21.2654 2.35313C20.519 1.55461 19.5298 1.02503 18.4515 0.846718C17.3731 0.668404 16.2661 0.851349 15.3025 1.36711C14.3388 1.88287 13.5726 2.70256 13.1228 3.69873C12.6731 4.6949 12.5651 5.81175 12.8156 6.87564C10.8442 6.77648 8.91568 6.26392 7.1552 5.37122C5.39471 4.47852 3.8416 3.22562 2.59666 1.69385C1.96278 2.78577 1.76861 4.07814 2.05363 5.30812C2.33866 6.53811 3.08149 7.61334 4.13104 8.31516C3.34371 8.29037 2.5737 8.07775 1.8852 7.695V7.75666C1.88572 8.90155 2.28209 10.011 3.00713 10.8971C3.73218 11.7831 4.7413 12.3912 5.86345 12.6183C5.13256 12.8164 4.36619 12.8456 3.62235 12.7037C3.93981 13.6882 4.55701 14.5489 5.38765 15.1655C6.21829 15.782 7.22085 16.1236 8.25513 16.1424C7.22646 16.9503 6.04864 17.5475 4.789 17.8999C3.52937 18.2523 2.21263 18.353 0.914062 18.1961C3.18089 19.654 5.81969 20.4279 8.51482 20.4254C10.3714 20.4381 12.212 20.0819 13.9298 19.3773C15.6475 18.6727 17.2081 17.6338 18.521 16.3209C19.8338 15.0081 20.8727 13.4475 21.5773 11.7297C22.2819 10.012 22.6382 8.17137 22.6254 6.31477C22.6254 6.10133 22.6254 5.88553 22.61 5.67446C23.5809 4.97261 24.4189 4.10328 25.0847 3.10728L25.0811 3.11321Z" fill="#1DA1F2"></path>
+                      </svg>
+                  </div>
+                  <div class="hear--common__icon social--icon intagram">
+                    <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="14" height="14" rx="7" fill="white"></rect>
+                      <path d="M8 0C10.1736 0 10.4448 0.00799995 11.2976 0.048C11.9614 0.0617048 12.6181 0.187475 13.24 0.42C13.7743 0.620096 14.2582 0.934962 14.6576 1.3424C15.0644 1.74232 15.3792 2.22607 15.58 2.76C15.8122 3.38197 15.938 4.03863 15.952 4.7024C15.9896 5.5552 16 5.8224 16 8C16 10.1776 15.992 10.4448 15.952 11.2976C15.9379 11.9614 15.8121 12.618 15.58 13.24C15.3748 13.7717 15.0606 14.2546 14.6576 14.6576C14.2546 15.0606 13.7717 15.3748 13.24 15.58C12.618 15.8122 11.9614 15.938 11.2976 15.952C10.4448 15.9896 10.1776 16 8 16C5.8224 16 5.5552 15.992 4.7024 15.952C4.03864 15.9379 3.382 15.8121 2.76 15.58C2.2283 15.3748 1.74542 15.0606 1.34242 14.6576C0.939423 14.2546 0.625214 13.7717 0.42 13.24C0.187386 12.6181 0.0616129 11.9614 0.048 11.2976C0.0104 10.4448 0 10.1736 0 8C0 5.8264 0.00799995 5.5552 0.048 4.7024C0.0616129 4.03859 0.187386 3.38187 0.42 2.76C0.620189 2.22574 0.935043 1.74186 1.3424 1.3424C1.74219 0.935445 2.22598 0.620653 2.76 0.42C3.38187 0.187386 4.03859 0.0616129 4.7024 0.048C5.5552 0.0104 5.8264 0 8 0ZM8 4C7.20887 4 6.43552 4.2346 5.77772 4.67412C5.11992 5.11365 4.60723 5.73836 4.30448 6.46927C4.00173 7.20017 3.92252 8.00444 4.07686 8.78036C4.2312 9.55628 4.61216 10.269 5.17157 10.8284C5.73098 11.3878 6.44371 11.7688 7.21964 11.9231C7.99556 12.0775 8.79983 11.9983 9.53073 11.6955C10.2616 11.3928 10.8864 10.8801 11.3259 10.2223C11.7654 9.56448 12 8.79113 12 8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4ZM13.2 3.8C13.2 3.60222 13.1414 3.40888 13.0315 3.24443C12.9216 3.07998 12.7654 2.95181 12.5827 2.87612C12.4 2.80043 12.1989 2.78063 12.0049 2.81921C11.8109 2.8578 11.6327 2.95304 11.4929 3.09289C11.353 3.23275 11.2578 3.41093 11.2192 3.60491C11.1806 3.79889 11.2004 3.99996 11.2761 4.18268C11.3518 4.36541 11.48 4.52159 11.6444 4.63147C11.8089 4.74135 12.0022 4.8 12.2 4.8C12.4652 4.8 12.7196 4.69464 12.9071 4.50711C13.0946 4.31957 13.2 4.06522 13.2 3.8ZM8 5.6C8.47468 5.6 8.93869 5.74076 9.33337 6.00447C9.72805 6.26819 10.0357 6.64302 10.2173 7.08156C10.399 7.5201 10.4465 8.00266 10.3539 8.46822C10.2613 8.93377 10.0327 9.36141 9.69706 9.69706C9.36141 10.0327 8.93377 10.2613 8.46822 10.3539C8.00266 10.4465 7.5201 10.399 7.08156 10.2173C6.64302 10.0357 6.26819 9.72805 6.00447 9.33337C5.74076 8.93869 5.6 8.47468 5.6 8C5.6 7.36348 5.85286 6.75303 6.30294 6.30294C6.75303 5.85286 7.36348 5.6 8 5.6Z" fill="url(#paint0_linear_1645_10570)"></path>
+                      <defs>
+                      <linearGradient id="paint0_linear_1645_10570" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F9CE34"></stop>
+                      <stop offset="0.515626" stop-color="#EE2A7B"></stop>
+                      <stop offset="1" stop-color="#6228D7"></stop>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="hear--maincontact">
+                <div class="maincontact">The Colin & Samir Show</div>
+                <div class="maincontact">Creator Support</div>
+                <div class="maincontact">Creator Startup</div>
+                <div class="maincontact">Contact</div>
+              </div>
+            </div>
+            <div class="hear--copyRight">
+              <p>	&copy2024 Colin & Samir. All Rights Reserved. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer--logo">
+        <svg width="100%" height="100%" viewBox="0 0 1484 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M680.921 207.978C637.368 207.978 614.898 183.843 614.898 152.774C614.898 124.478 632.93 106.724 658.729 93.6859C647.355 79.8155 642.084 68.7192 642.084 52.6296C642.084 26.8307 662.612 6.85742 693.405 6.85742C723.365 6.85742 745.28 25.1663 745.28 52.3522C745.28 76.764 731.132 88.97 709.772 100.066L736.125 134.187C740.009 124.201 742.783 112.827 743.893 102.008H777.459C775.795 124.201 769.414 145.561 758.595 163.315L789.942 203.817H743.893L733.629 190.778C718.926 201.597 700.895 207.978 680.921 207.978ZM682.308 176.908C694.237 176.908 705.056 172.747 713.933 165.257L677.592 117.82C660.671 128.084 654.845 139.181 654.845 151.664C654.845 166.644 666.774 176.908 682.308 176.908ZM678.425 53.1844C678.425 62.0615 684.528 70.6611 692.85 78.7059C705.888 70.9385 709.494 62.3389 709.494 52.907C709.494 43.1978 702.282 37.0948 693.959 37.0948C685.082 37.0948 678.425 43.7526 678.425 53.1844Z" fill="#F6E921"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M95.4281 206.828C39.6692 206.828 0 163.83 0 104.188C0 45.3775 36.6178 0.4375 95.1507 0.4375C143.974 0.4375 172.825 29.5653 176.986 67.2926H137.039C133.433 47.3193 118.453 34.2812 95.1507 34.2812C58.5329 34.2812 41.0563 64.796 41.0563 104.188C41.0563 144.689 62.1392 173.817 95.4281 173.817C119.008 173.817 135.652 159.669 138.149 138.864H177.541C176.431 156.34 168.941 173.262 155.625 185.745C142.033 198.506 122.891 206.828 95.4281 206.828ZM258.341 206.828C214.233 206.828 183.995 174.094 183.995 131.651C183.995 89.2078 214.233 56.4737 258.341 56.4737C302.448 56.4737 332.686 89.2078 332.686 131.651C332.686 174.094 302.448 206.828 258.341 206.828ZM258.341 177.978C281.365 177.978 294.404 159.392 294.404 131.651C294.404 103.91 281.365 85.0467 258.341 85.0467C235.038 85.0467 222.278 103.91 222.278 131.651C222.278 159.392 235.038 177.978 258.341 177.978ZM342.456 4.3212V202.667H380.183V4.3212H342.456ZM396.7 202.667V60.3575H434.427V202.667H396.7ZM487.31 79.776V60.3575H450.415V202.667H488.142V121.942C488.142 102.523 500.348 89.2078 516.993 89.2078C532.805 89.2078 541.682 100.027 541.682 115.284V202.667H579.409V109.736C579.409 78.6663 559.713 56.4737 530.308 56.4737C510.89 56.4737 497.851 64.5186 488.142 79.776H487.31ZM415.539 49.2964C428.053 49.2964 438.198 39.1521 438.198 26.6384C438.198 14.1248 428.053 3.98047 415.539 3.98047C403.025 3.98047 392.881 14.1248 392.881 26.6384C392.881 39.1521 403.025 49.2964 415.539 49.2964Z" fill="#F6E921"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M899.869 207.026C846.052 207.026 815.537 183.169 814.15 141.28H853.542C856.316 165.137 869.909 174.569 898.205 174.569C918.733 174.569 936.764 167.356 936.764 149.048C936.764 130.056 918.721 125.924 889.642 119.264C888.988 119.114 888.328 118.963 887.663 118.81C852.155 110.765 819.699 101.334 819.699 59.9999C819.699 20.8855 851.6 0.634766 895.708 0.634766C940.371 0.634766 969.221 22.5499 972.273 62.4966H933.713C931.494 42.5232 915.959 32.5366 895.431 32.5366C873.793 32.5366 859.645 41.691 859.645 55.8388C859.645 71.9284 873.516 76.6443 902.921 83.0247C943.7 91.9017 976.989 101.611 976.989 144.332C976.989 184.556 944.532 207.026 899.869 207.026ZM1079.24 202.587C1077.02 199.813 1075.64 193.155 1074.8 186.775H1074.25C1067.04 197.594 1056.77 205.916 1032.36 205.916C1003.23 205.916 982.704 190.659 982.704 162.363C982.704 131.016 1008.23 121.029 1039.85 116.591C1063.43 113.262 1074.25 111.32 1074.25 100.501C1074.25 90.2373 1066.2 83.5795 1050.39 83.5795C1032.64 83.5795 1024.04 89.9599 1022.93 103.553H989.361C990.471 78.5862 1009.06 56.671 1050.67 56.671C1093.39 56.671 1110.59 75.8121 1110.59 109.101V181.504C1110.59 192.323 1112.25 198.703 1115.58 201.2V202.587H1079.24ZM1041.51 179.562C1063.15 179.562 1075.08 166.247 1075.08 152.376V131.016C1068.9 134.62 1059.62 136.791 1050.78 138.858C1050.09 139.019 1049.41 139.179 1048.73 139.338C1029.03 143.777 1019.32 148.215 1019.32 161.531C1019.32 174.846 1028.2 179.562 1041.51 179.562ZM1126.25 60.2773V202.587H1163.98V119.92C1163.98 101.056 1174.24 88.8502 1189.5 88.8502C1203.37 88.8502 1211.42 97.1725 1211.42 113.262V202.587H1249.14V119.92C1249.14 101.056 1258.85 88.8502 1274.66 88.8502C1288.53 88.8502 1296.58 97.1725 1296.58 113.262V202.587H1334.31V106.882C1334.31 75.8121 1317.38 56.3936 1287.42 56.3936C1269.39 56.3936 1254.41 65.8254 1244.7 81.3603H1244.15C1237.21 66.3803 1222.79 56.3936 1204.76 56.3936C1185.06 56.3936 1171.19 66.3803 1163.42 79.4184H1162.59V60.2773H1126.25ZM1349.28 202.587V60.2773H1387.01V202.587H1349.28ZM1439.34 83.0247V60.2773H1403V202.587H1440.72V133.235C1440.72 103.275 1458.48 90.2373 1483.17 92.7339H1484V59.7225C1481.78 58.8903 1479.28 58.6129 1475.12 58.6129C1458.48 58.6129 1448.77 66.9351 1440.17 83.0247H1439.34ZM1368.12 49.2945C1380.64 49.2945 1390.78 39.1501 1390.78 26.6365C1390.78 14.1228 1380.64 3.97852 1368.12 3.97852C1355.61 3.97852 1345.46 14.1228 1345.46 26.6365C1345.46 39.1501 1355.61 49.2945 1368.12 49.2945Z" fill="#F6E921"></path>
+          </svg>
+      </div>
+    </footer>
+    <!-- ============== -->
+    <script src="./main.js"></script>
+  
+  </body>
+</html>
+
